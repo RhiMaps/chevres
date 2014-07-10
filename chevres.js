@@ -13,7 +13,21 @@ var osmLayer = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
   attribution: 'OpenStreetMap'
   }).addTo(map);
 
-var chevresLayer = L.geoCsv(null, { firstLineTitles: true, fieldSeparator: ',', });
+var chevresLayer = L.geoCsv(null, {
+    firstLineTitles: true,
+    fieldSeparator: ',',
+    onEachFeature: function (feature, layer) {
+        var popup="";
+        popup += '<b>'+feature.properties['name']+'</b>';
+        popup += '<img src="./datas/'+feature.properties['imgpath']+'"/>';
+        //for (var key in feature.properties) {
+        //    var title = chevresLayer.getPropertyTitle(key);
+        //    popup += '<b>'+title+'</b><br />'+feature.properties[key]+'<br />';
+        //}
+        
+        layer.bindPopup(popup);
+    },
+});
 
 
 $.ajax ({
