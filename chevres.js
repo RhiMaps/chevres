@@ -44,11 +44,9 @@ $.ajax ({
         //map.addLayer(cluster);
         map.addLayer(chevresLayer);
         map.fitBounds(chevresLayer.getBounds());
-      alert( 'success');
     },
    complete: function() {
       //$('#cargando').delay(500).fadeOut('slow');
-      alert( 'complet');
    }
 });
 
