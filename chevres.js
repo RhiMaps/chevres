@@ -68,3 +68,7 @@ var overLays = {
 };
 
 L.control.layers(baseLayers, overLays).setPosition('topright').addTo(map);
+
+// rewrite url to show lat/lon/zoom
+// (uses leaflet-hash plugin as submodule)
+var hash = new L.Hash(map);

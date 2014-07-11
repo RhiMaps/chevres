@@ -1,3 +1,6 @@
 [submodule "lf-plugins/Leaflet.geoCSV"]
 	path = lf-plugins/Leaflet.geoCSV
 	url = https://github.com/joker-x/Leaflet.geoCSV.git
+[submodule "lf-plugins/leaflet-hash"]
+	path = lf-plugins/leaflet-hash
+	url = https://github.com/mlevans/leaflet-hash.git
