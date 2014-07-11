@@ -17,9 +17,9 @@ var chevresLayer = L.geoCsv(null, {
     firstLineTitles: true,
     fieldSeparator: ',',
     onEachFeature: function (feature, layer) {
-        var popup="";
-        popup += '<b>'+feature.properties['name']+'</b>';
-        popup += '<img src="./datas/'+feature.properties['imgpath']+'"/>';
+        var popupContent= '<b>'+feature.properties['name']+'</b>'+
+                          '<img src="./datas/'+feature.properties['imgpath']+'"/>';
+        var popup = L.popup( {minWidth: '400'}).setContent(popupContent);
         //for (var key in feature.properties) {
         //    var title = chevresLayer.getPropertyTitle(key);
         //    popup += '<b>'+title+'</b><br />'+feature.properties[key]+'<br />';
