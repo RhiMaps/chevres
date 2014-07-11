@@ -24,9 +24,17 @@ var chevresLayer = L.geoCsv(null, {
         //    var title = chevresLayer.getPropertyTitle(key);
         //    popup += '<b>'+title+'</b><br />'+feature.properties[key]+'<br />';
         //}
-        
         layer.bindPopup(popup);
     },
+    pointToLayer: function(feature, latlng) {
+          var myIcon = L.icon({
+              iconUrl: 'images/chevre.png',
+              iconSize: [40, 40],
+              iconAnchor: [20, 20],
+              popupAnchor: [0, -20]});
+          var marker = L.marker(latlng, {icon:myIcon} );
+          return  marker;
+      },
 });
 
 
