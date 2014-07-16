@@ -13,6 +13,16 @@ var osmLayer = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
     attribution: 'OpenStreetMap'
 }).addTo(map);
 
+var esriLayer = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+    attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+});
+
+var mapqLayer = L.tileLayer('http://{s}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png', {
+    attribution: 'MapQuest OpenStreetMap',
+    subdomains: ['otile1', 'otile2', 'otile3', 'otile4']
+});
+
+
 var chevresLayer = L.geoCsv(null, {
     firstLineTitles: true,
     fieldSeparator: ',',
@@ -70,7 +80,9 @@ $.ajax({
 
 
 var baseLayers = {
-    "OSM": osmLayer
+    "Satellite": esriLayer,
+    "OSM": osmLayer,
+    "MapBox": mapqLayer,
 };
 
 var overLays = {
