@@ -1,4 +1,4 @@
-var z = 4;
+var z = 8;
 var myLL = L.latLng(43.808, 0.887);
 
 // create a map in the "map" div, set the view to a given place and zoom
@@ -18,8 +18,11 @@ var chevresLayer = L.geoCsv(null, {
     fieldSeparator: ',',
     onEachFeature: function(feature, layer) {
         var popupContent = '<b>' + feature.properties['name'] + '</b>';
-       if ( feature.properties['poids']) popupContent +='</br>'+ feature.properties['poids'] + ' gr.';
-       if ( feature.properties['grasse']) popupContent +='</br>'+ feature.properties['grasse'] + '% mat. grasse';
+       if ( feature.properties['poids']) popupContent +=' '+feature.properties['poids'] + ' gr.';
+       if ( feature.properties['grasse']) popupContent +=' '+feature.properties['grasse'] + '% mat. grasses';
+       if ( feature.properties['ferme']) popupContent +='</br>'+ feature.properties['ferme'];
+       if ( feature.properties['code']) popupContent +='</br>'+ feature.properties['code'];
+       if ( feature.properties['ville']) popupContent +=' '+ feature.properties['ville'];
                             //+ '<img src="./datas/' + feature.properties['imgpath'] + '"/>';
         var popup = L.popup({
             minWidth: '400'
