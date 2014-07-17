@@ -1,5 +1,6 @@
-var z = 8;
-var myLL = L.latLng(43.808, 0.887);
+var z = 7;
+var myLL = L.latLng(46.725,1.785);
+
 
 // create a map in the "map" div, set the view to a given place and zoom
 var map = L.map('map', {
@@ -71,7 +72,7 @@ $.ajax({
         //cluster.addLayer(bankias);
         //map.addLayer(cluster);
         map.addLayer(chevresLayer);
-        map.fitBounds(chevresLayer.getBounds());
+        //map.fitBounds(chevresLayer.getBounds());
     },
     complete: function() {
         //$('#cargando').delay(500).fadeOut('slow');
