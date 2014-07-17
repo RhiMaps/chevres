@@ -4,3 +4,6 @@
 [submodule "lf-plugins/leaflet-hash"]
 	path = lf-plugins/leaflet-hash
 	url = https://github.com/mlevans/leaflet-hash.git
+[submodule "lf-plugins/L.GeoSearch"]
+	path = lf-plugins/L.GeoSearch
+	url = https://github.com/smeijer/L.GeoSearch.git
