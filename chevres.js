@@ -1,5 +1,6 @@
-var z = 8;
-var myLL = L.latLng(43.808, 0.887);
+var z = 7;
+var myLL = L.latLng(46.725,1.785);
+
 
 // create a map in the "map" div, set the view to a given place and zoom
 var map = L.map('map', {
@@ -28,12 +29,12 @@ var chevresLayer = L.geoCsv(null, {
     fieldSeparator: ';',
     onEachFeature: function(feature, layer) {
         var popupContent = '<b>' + feature.properties['name'] + '</b>';
-       if ( feature.properties['poids']) popupContent +=' '+feature.properties['poids'] + ' gr.';
-       if ( feature.properties['grasse']) popupContent +=' '+feature.properties['grasse'] + '% mat. grasses';
-       if ( feature.properties['ferme']) popupContent +='</br>'+ feature.properties['ferme'];
-       if ( feature.properties['code']) popupContent +='</br>'+ feature.properties['code'];
-       if ( feature.properties['ville']) popupContent +=' '+ feature.properties['ville'];
-                            //+ '<img src="./datas/' + feature.properties['imgpath'] + '"/>';
+        if (feature.properties['poids']) popupContent += ' ' + feature.properties['poids'] + ' gr.';
+        if (feature.properties['grasse']) popupContent += ' ' + feature.properties['grasse'] + '% mat. grasses';
+        if (feature.properties['ferme']) popupContent += '</br>' + feature.properties['ferme'];
+        if (feature.properties['code']) popupContent += '</br>' + feature.properties['code'];
+        if (feature.properties['ville']) popupContent += ' ' + feature.properties['ville'];
+        //+ '<img src="./datas/' + feature.properties['imgpath'] + '"/>';
         var popup = L.popup({
             minWidth: '400'
         }).setContent(popupContent);
@@ -71,7 +72,7 @@ $.ajax({
         //cluster.addLayer(bankias);
         //map.addLayer(cluster);
         map.addLayer(chevresLayer);
-        map.fitBounds(chevresLayer.getBounds());
+        //map.fitBounds(chevresLayer.getBounds());
     },
     complete: function() {
         //$('#cargando').delay(500).fadeOut('slow');
@@ -89,8 +90,19 @@ var overLays = {
     "chevres": chevresLayer,
 };
 
+// Layers switchers
 L.control.layers(baseLayers, overLays).setPosition('topright').addTo(map);
 
-// rewrite url to show lat/lon/zoom
+// Scale at bottom left
+L.control.scale().addTo(map);
+
+// Rewrite url to show lat/lon/zoom
 // (uses leaflet-hash plugin as submodule)
 var hash = new L.Hash(map);
+
+// search field to find place
+// (use leaflet-geocoding plugin as submodule)
+new L.Control.GeoSearch({
+    provider: new L.GeoSearch.Provider.OpenStreetMap(),
+    zoomLevel: 15,
+}).addTo(map);
