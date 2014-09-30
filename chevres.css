@@ -6,3 +6,8 @@ img {
     width: 400px;
     display: block;
 }
+
+img.leaflet-marker-icon {
+    width: 25px !important;
+    height: 25px !important;
+}
