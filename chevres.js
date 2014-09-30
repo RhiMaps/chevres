@@ -26,7 +26,7 @@ var mapqLayer = L.tileLayer('http://{s}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.pn
 
 var chevresLayer = L.geoCsv(null, {
     firstLineTitles: true,
-    fieldSeparator: ',',
+    fieldSeparator: ';',
     onEachFeature: function(feature, layer) {
         var popupContent = '<b>' + feature.properties['name'] + '</b>';
         if (feature.properties['poids']) popupContent += ' ' + feature.properties['poids'] + ' gr.';
