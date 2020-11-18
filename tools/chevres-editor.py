@@ -3,6 +3,9 @@ from tkinter import *
 from tkinter import ttk
 from PIL import ImageTk, Image
 
+IMG_W=400
+IMG_H=400
+
 all_csv_rows = []
 with open('/home/richard/public_html/chevres/datas/chevres_vincent_geocoded.csv', 'r') as csvfile:
     spamreader = csv.reader(csvfile, delimiter=';', quotechar='|')
@@ -56,14 +59,11 @@ def row2form(my_row):
     town.set(my_row[4])
     lat.set(my_row[7])
     lng.set(my_row[8])
-    my_image = ImageTk.PhotoImage(file="/home/richard/public_html/chevres/datas/{}".format(imgpath.get()))
-    # image = ImageTk.PhotoImage(Image.open("/usr/share/tcltk/tk8.6/images/pwrdLogo100.gif"))
-    # image = PhotoImage(file=)
-    # imglabel['image'] = my_image
-    # imglabel.set
-    # imglabel.pack()
-    imglabel.configure(image=my_image)
-    imglabel.image = my_image
+    my_image = Image.open("/home/richard/public_html/chevres/datas/{}".format(imgpath.get()))
+    my_image = my_image.resize((IMG_W, IMG_H), Image.ANTIALIAS)
+    photo_image =ImageTk.PhotoImage(my_image)
+    imglabel.configure(image=photo_image)
+    imglabel.image = photo_image
 
     print(type(image))
 
@@ -76,8 +76,12 @@ mainframe.grid(column=0, row=0, sticky=(N, W, E, S))
 root.columnconfigure(0, weight=1)
 root.rowconfigure(0, weight=1)
 
-image = ImageTk.PhotoImage(Image.open("/usr/share/tcltk/tk8.6/images/pwrdLogo100.gif"))
-imglabel = ttk.Label(mainframe, image=image)
+image = Image.open("/usr/share/tcltk/tk8.6/images/pwrdLogo100.gif")
+image = image.resize((IMG_W, IMG_H), Image.ANTIALIAS)
+photo_image = ImageTk.PhotoImage(image)
+imglabel = ttk.Label(mainframe)
+imglabel.configure(image=photo_image)
+imglabel.image = photo_image
 imglabel.grid(column=1, row=2, rowspan=8, sticky=E)
 
 ttk.Label(mainframe, text="Img Path").grid(column=2, row=1, sticky=W)
