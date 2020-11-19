@@ -1,22 +1,38 @@
 import csv
+import os
 from tkinter import *
 from tkinter import ttk
 from PIL import ImageTk, Image
 
+from geopy.geocoders import Nominatim
+from geopy.exc import GeocoderTimedOut
+
 IMG_W = 400
 IMG_H = 400
 
+default_goat_image = '/home/richard/public_html/chevres/images/chevre.png'
+csv_to_read = '/home/richard/public_html/chevres/datas/chevres_vincent_geocoded.csv'
+csv_to_save = '/home/richard/public_html/chevres/sauve.csv'
+data_path = '/home/richard/public_html/chevres/datas/'
+
 all_csv_rows = []
-with open('/home/richard/public_html/chevres/datas/chevres_vincent_geocoded.csv', 'r') as csvfile:
+with open(csv_to_read, 'r') as csvfile:
     spamreader = csv.reader(csvfile, delimiter=';', quotechar='|')
     for row in spamreader:
         all_csv_rows.append(row)
 
 
-def save_csv():
-    with open('/home/richard/public_html/chevres/sauve.csv', 'w') as csvfiletosave:
+def show_status(message=''):
+    print(message)
+    statusmsg.set(message)
+
+
+def save_csv(*args):
+    show_status("Saving csv to {} ...".format(csv_to_save))
+    with open(csv_to_save, 'w') as csvfiletosave:
         csv_writer = csv.writer(csvfiletosave, delimiter=';')
         csv_writer.writerows(all_csv_rows)
+    show_status("Saved csv to {}".format(csv_to_save))
 
 
 photo_index = 0
@@ -27,6 +43,7 @@ def previous_photo(*args):
     all_csv_rows[photo_index] = form2row()
     photo_index = photo_index - 1
     my_row = all_csv_rows[photo_index]
+    show_status('Display {}'.format(my_row[1]))
     row2form(my_row)
 
 
@@ -35,6 +52,33 @@ def next_photo(*args):
     all_csv_rows[photo_index] = form2row()
     photo_index = photo_index + 1
     my_row = all_csv_rows[photo_index]
+    show_status("Display '{}'".format(my_row[1]))
+    row2form(my_row)
+
+
+def geocode_row(*args):
+    geolocator = Nominatim(user_agent="my_application")
+    my_row = form2row()
+    adress = my_row[3] + " " + my_row[4]
+    show_status("Geocoding '{}' ....".format(adress))
+    try:
+        geocodes = geolocator.geocode(adress, exactly_one=False)
+    except GeocoderTimedOut:
+        geocodes = None
+        sys.stderr.write(adress)
+    # if you dont find
+    if geocodes is None:
+        # look without postcode
+        geocodes = geolocator.geocode(row[3], exactly_one=False)
+        # or
+        if geocodes is None:
+            # just give up
+            show_status("Unable to geocode '{}'".format(adress))
+            return
+    location, (my_lat, my_lng) = geocodes[0]
+    show_status("'{}' found at {}, {}".format(adress, my_lat, my_lng))
+    my_row[7] = my_lat
+    my_row[8] = my_lng
     row2form(my_row)
 
 
@@ -62,13 +106,15 @@ def row2form(my_row):
     town.set(my_row[4])
     lat.set(my_row[7])
     lng.set(my_row[8])
-    my_image = Image.open("/home/richard/public_html/chevres/datas/{}".format(imgpath.get()))
+    image_path = "{}{}".format(data_path, imgpath.get())
+    if not os.path.isfile(image_path):
+        show_status("No such image {}".format(image_path))
+        image_path = default_goat_image
+    my_image = Image.open(image_path)
     my_image = my_image.resize((IMG_W, IMG_H), Image.ANTIALIAS)
     my_photo_image = ImageTk.PhotoImage(my_image)
     imglabel.configure(image=my_photo_image)
     imglabel.image = my_photo_image
-
-    print(type(image))
 
 
 root = Tk()
@@ -79,13 +125,16 @@ mainframe.grid(column=0, row=0, sticky=(N, W, E, S))
 root.columnconfigure(0, weight=1)
 root.rowconfigure(0, weight=1)
 
-image = Image.open("/usr/share/tcltk/tk8.6/images/pwrdLogo100.gif")
+image = Image.open(default_goat_image)
 image = image.resize((IMG_W, IMG_H), Image.ANTIALIAS)
 photo_image = ImageTk.PhotoImage(image)
 imglabel = ttk.Label(mainframe)
 imglabel.configure(image=photo_image)
 imglabel.image = photo_image
 imglabel.grid(column=1, row=2, rowspan=8, sticky=E)
+
+statusmsg = StringVar()
+ttk.Label(mainframe, textvariable=statusmsg).grid(column=1, row=12, sticky=(W, E))
 
 ttk.Label(mainframe, text="Img Path").grid(column=2, row=1, sticky=W)
 imgpath = StringVar()
@@ -134,11 +183,15 @@ lng_entry.grid(column=3, row=9, sticky=(W, E))
 ttk.Button(mainframe, text="Prev", command=previous_photo).grid(column=2, row=10, sticky=E)
 ttk.Button(mainframe, text="Next", command=next_photo).grid(column=3, row=10, sticky=E)
 ttk.Button(mainframe, text="Save", command=save_csv).grid(column=3, row=11, sticky=E)
+ttk.Button(mainframe, text="GeoCode", command=geocode_row).grid(column=3, row=12, sticky=E)
 
 for child in mainframe.winfo_children():
     child.grid_configure(padx=5, pady=5)
 
 name_entry.focus()
-root.bind("<Return>", next_photo)
+root.bind("<Left>", previous_photo)
+root.bind("<Right>", next_photo)
+root.bind("<Return>", save_csv)
+root.bind("<Control-g>", geocode_row)
 
 root.mainloop()
