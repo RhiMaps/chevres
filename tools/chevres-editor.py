@@ -10,10 +10,18 @@ from geopy.exc import GeocoderTimedOut
 IMG_W = 400
 IMG_H = 400
 
-default_goat_image = '/home/richard/public_html/chevres/images/chevre.png'
-csv_to_read = '/home/richard/public_html/chevres/datas/chevres_vincent_geocoded.csv'
-csv_to_save = '/home/richard/public_html/chevres/sauve.csv'
-data_path = '/home/richard/public_html/chevres/datas/'
+# Set the project root path, that is the parent dir of the current script
+script_path = os.path.dirname(os.path.realpath(__file__))
+root_path = os.path.abspath(os.path.join(script_path, os.pardir))
+
+data_path = os.path.join(root_path, 'datas')
+default_goat_image = os.path.join(root_path, 'images', 'chevre.png')
+
+csv_to_save = os.path.join(data_path, 'chevres_vincent_geocoded.csv')
+if len(sys.argv) == 2:
+    csv_to_read = sys.argv[1]
+else:
+    csv_to_read = csv_to_save
 
 all_csv_rows = []
 with open(csv_to_read, 'r') as csvfile:
@@ -38,22 +46,22 @@ def save_csv(*args):
 photo_index = 0
 
 
-def previous_photo(*args):
+def move_photo(step):
     global photo_index
+    name_entry.focus()
     all_csv_rows[photo_index] = form2row()
-    photo_index = photo_index - 1
+    photo_index = photo_index + step
     my_row = all_csv_rows[photo_index]
     show_status('Display {}'.format(my_row[1]))
     row2form(my_row)
 
 
+def previous_photo(*args):
+    move_photo(-1)
+
+
 def next_photo(*args):
-    global photo_index
-    all_csv_rows[photo_index] = form2row()
-    photo_index = photo_index + 1
-    my_row = all_csv_rows[photo_index]
-    show_status("Display '{}'".format(my_row[1]))
-    row2form(my_row)
+    move_photo(+1)
 
 
 def geocode_row(*args):
@@ -106,7 +114,7 @@ def row2form(my_row):
     town.set(my_row[4])
     lat.set(my_row[7])
     lng.set(my_row[8])
-    image_path = "{}{}".format(data_path, imgpath.get())
+    image_path = os.path.join(data_path, imgpath.get())
     if not os.path.isfile(image_path):
         show_status("No such image {}".format(image_path))
         image_path = default_goat_image
@@ -189,8 +197,8 @@ for child in mainframe.winfo_children():
     child.grid_configure(padx=5, pady=5)
 
 name_entry.focus()
-root.bind("<Left>", previous_photo)
-root.bind("<Right>", next_photo)
+root.bind("<Control-Left>", previous_photo)
+root.bind("<Control-Right>", next_photo)
 root.bind("<Return>", save_csv)
 root.bind("<Control-g>", geocode_row)
 
