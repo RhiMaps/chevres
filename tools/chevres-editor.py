@@ -3,8 +3,8 @@ from tkinter import *
 from tkinter import ttk
 from PIL import ImageTk, Image
 
-IMG_W=400
-IMG_H=400
+IMG_W = 400
+IMG_H = 400
 
 all_csv_rows = []
 with open('/home/richard/public_html/chevres/datas/chevres_vincent_geocoded.csv', 'r') as csvfile:
@@ -12,10 +12,12 @@ with open('/home/richard/public_html/chevres/datas/chevres_vincent_geocoded.csv'
     for row in spamreader:
         all_csv_rows.append(row)
 
+
 def save_csv():
-    with open('/home/richard/public_html/chevres/sauve.csv', 'w') as csvfile:
-        csv_writer = csv.writer(csvfile,  delimiter=';')
-        csv_writer.writerows( all_csv_rows)
+    with open('/home/richard/public_html/chevres/sauve.csv', 'w') as csvfiletosave:
+        csv_writer = csv.writer(csvfiletosave, delimiter=';')
+        csv_writer.writerows(all_csv_rows)
+
 
 photo_index = 0
 
@@ -37,17 +39,18 @@ def next_photo(*args):
 
 
 def form2row():
-    my_row=[None]*9
-    my_row[0]=imgpath.get()
-    my_row[1]=name.get()
-    my_row[5]=weight.get()
-    my_row[6]=fat.get()
-    my_row[2]=farm.get()
-    my_row[3]=postal.get()
-    my_row[4]=town.get()
-    my_row[7]=lat.get()
-    my_row[8]=lng.get()
-    return( my_row)
+    my_row = [None] * 9
+    my_row[0] = imgpath.get()
+    my_row[1] = name.get()
+    my_row[5] = weight.get()
+    my_row[6] = fat.get()
+    my_row[2] = farm.get()
+    my_row[3] = postal.get()
+    my_row[4] = town.get()
+    my_row[7] = lat.get()
+    my_row[8] = lng.get()
+    return my_row
+
 
 def row2form(my_row):
     imgpath.set(my_row[0])
@@ -61,9 +64,9 @@ def row2form(my_row):
     lng.set(my_row[8])
     my_image = Image.open("/home/richard/public_html/chevres/datas/{}".format(imgpath.get()))
     my_image = my_image.resize((IMG_W, IMG_H), Image.ANTIALIAS)
-    photo_image =ImageTk.PhotoImage(my_image)
-    imglabel.configure(image=photo_image)
-    imglabel.image = photo_image
+    my_photo_image = ImageTk.PhotoImage(my_image)
+    imglabel.configure(image=my_photo_image)
+    imglabel.image = my_photo_image
 
     print(type(image))
 
@@ -137,6 +140,5 @@ for child in mainframe.winfo_children():
 
 name_entry.focus()
 root.bind("<Return>", next_photo)
-
 
 root.mainloop()
