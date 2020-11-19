@@ -23,11 +23,14 @@ if len(sys.argv) == 2:
 else:
     csv_to_read = csv_to_save
 
+csv_headers = []
 all_csv_rows = []
 with open(csv_to_read, 'r') as csvfile:
     spamreader = csv.reader(csvfile, delimiter=';', quotechar='"')
-    for row in spamreader:
-        all_csv_rows.append(row)
+    print(type(spamreader))
+    all_csv = list(spamreader)
+    csv_headers = all_csv[0]
+    all_csv_rows = all_csv[1:]
 
 
 def show_status(message=''):
@@ -38,12 +41,14 @@ def show_status(message=''):
 def save_csv(*args):
     # Save current first
     all_csv_rows[photo_index] = form2row()
+    # Concatenate with headers
+    final_csv = [csv_headers]+all_csv_rows
     show_status("Saving csv to {} ...".format(csv_to_save))
     with open(csv_to_save, 'w') as csvfiletosave:
         csv_writer = csv.writer(csvfiletosave, delimiter=';',
                                 quotechar='"', quoting=csv.QUOTE_MINIMAL,
                                 lineterminator='\n')
-        csv_writer.writerows(all_csv_rows)
+        csv_writer.writerows(final_csv)
     show_status("Saved csv to {}".format(csv_to_save))
 
 
@@ -51,11 +56,16 @@ photo_index = 0
 
 
 def move_photo(step):
+    save_csv()
     global photo_index
     name_entry.focus()
-    all_csv_rows[photo_index] = form2row()
-    photo_index = photo_index + step
-    my_row = all_csv_rows[photo_index]
+    try:
+        all_csv_rows[photo_index] = form2row()
+        photo_index = photo_index + step
+        my_row = all_csv_rows[photo_index]
+    except IndexError:
+        photo_index = 0
+        my_row = all_csv_rows[photo_index]
     show_status('Display {}'.format(my_row[1]))
     row2form(my_row)
 
