@@ -25,7 +25,7 @@ else:
 
 all_csv_rows = []
 with open(csv_to_read, 'r') as csvfile:
-    spamreader = csv.reader(csvfile, delimiter=';', quotechar='|')
+    spamreader = csv.reader(csvfile, delimiter=';', quotechar='"')
     for row in spamreader:
         all_csv_rows.append(row)
 
@@ -36,9 +36,13 @@ def show_status(message=''):
 
 
 def save_csv(*args):
+    # Save current first
+    all_csv_rows[photo_index] = form2row()
     show_status("Saving csv to {} ...".format(csv_to_save))
     with open(csv_to_save, 'w') as csvfiletosave:
-        csv_writer = csv.writer(csvfiletosave, delimiter=';')
+        csv_writer = csv.writer(csvfiletosave, delimiter=';',
+                                quotechar='"', quoting=csv.QUOTE_MINIMAL,
+                                lineterminator='\n')
         csv_writer.writerows(all_csv_rows)
     show_status("Saved csv to {}".format(csv_to_save))
 
@@ -84,7 +88,7 @@ def geocode_row(*args):
             show_status("Unable to geocode '{}'".format(adress))
             return
     location, (my_lat, my_lng) = geocodes[0]
-    show_status("'{}' found at {}, {}".format(adress, my_lat, my_lng))
+    show_status("'{}' found at {} ({}, {})".format(adress, location, my_lat, my_lng))
     my_row[7] = my_lat
     my_row[8] = my_lng
     row2form(my_row)
@@ -142,7 +146,7 @@ imglabel.image = photo_image
 imglabel.grid(column=1, row=2, rowspan=8, sticky=E)
 
 statusmsg = StringVar()
-ttk.Label(mainframe, textvariable=statusmsg).grid(column=1, row=12, sticky=(W, E))
+ttk.Label(mainframe, textvariable=statusmsg).grid(column=1, row=14, columnspan=3, sticky=(W, E))
 
 ttk.Label(mainframe, text="Img Path").grid(column=2, row=1, sticky=W)
 imgpath = StringVar()
@@ -188,10 +192,10 @@ lng = StringVar()
 lng_entry = ttk.Entry(mainframe, width=32, textvariable=lng)
 lng_entry.grid(column=3, row=9, sticky=(W, E))
 
-ttk.Button(mainframe, text="Prev", command=previous_photo).grid(column=2, row=10, sticky=E)
-ttk.Button(mainframe, text="Next", command=next_photo).grid(column=3, row=10, sticky=E)
-ttk.Button(mainframe, text="Save", command=save_csv).grid(column=3, row=11, sticky=E)
-ttk.Button(mainframe, text="GeoCode", command=geocode_row).grid(column=3, row=12, sticky=E)
+ttk.Button(mainframe, text="Prev", command=previous_photo).grid(column=3, row=10, sticky=E)
+ttk.Button(mainframe, text="Next", command=next_photo).grid(column=3, row=11, sticky=E)
+ttk.Button(mainframe, text="Save", command=save_csv).grid(column=3, row=12, sticky=E)
+ttk.Button(mainframe, text="GeoCode", command=geocode_row).grid(column=3, row=13, sticky=E)
 
 for child in mainframe.winfo_children():
     child.grid_configure(padx=5, pady=5)
@@ -202,4 +206,5 @@ root.bind("<Control-Right>", next_photo)
 root.bind("<Return>", save_csv)
 root.bind("<Control-g>", geocode_row)
 
+row2form(all_csv_rows[0])
 root.mainloop()
