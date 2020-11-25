@@ -34,7 +34,11 @@ var chevresLayer = L.geoCsv(null, {
         if (feature.properties['ferme']) popupContent += '</br>' + feature.properties['ferme'];
         if (feature.properties['code']) popupContent += '</br>' + feature.properties['code'];
         if (feature.properties['ville']) popupContent += ' ' + feature.properties['ville'];
-        if (feature.properties['imgpath']) popupContent += '<img class="chevre" src="./datas/' + feature.properties['imgpath'] + '"/>';
+        if (feature.properties['imgpath']){
+            popupContent += '<img class="chevre" src="./datas/' + feature.properties['imgpath'] + '"/>';
+        }else{
+            popupContent += '<img class="chevre" src="./images/chevre.png"/>';
+        }
         var popup = L.popup({
             minWidth: '400'
         }).setContent(popupContent);
@@ -45,8 +49,13 @@ var chevresLayer = L.geoCsv(null, {
         layer.bindPopup(popup);
     },
     pointToLayer: function(feature, latlng) {
+        if (feature.properties['imgpath']){
+            iconUrl = 'images/chevre.png'
+        }else{
+            iconUrl = 'images/chevre-rouge.png'
+        }
         var myIcon = L.icon({
-            iconUrl: 'images/chevre.png',
+            iconUrl: iconUrl,
             iconSize: [40, 40],
             iconAnchor: [20, 20],
             popupAnchor: [0, -20]

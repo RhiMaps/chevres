@@ -9,8 +9,8 @@ imgpath;name;ferme;code;ville;poids;grasse;lat;lng
 9.png;Le Bigoton;La Chevrerie d'authon;;Loire et Cher;;45;47.024882399999996;2.5753333606655704
 10.png;Buche kg pur chevre;;;;1kg;;;
 11.png;La Fourrierre;Girardot C.;52360;Frécourt;;;47.9514392;5.4578072
-12.png;Cabri du Berry;Fromagerie Hubert Triballat;18220;Rians;150;45;43.6060171;5.7570944
-13.png;Crottin de Chavignol;Affineur Dubois - Boulay;18300;Chavignol;60;;47.33765655;2.8012337083
+;Cabri du Berry;Fromagerie Hubert Triballat;18220;Rians;150;45;43.6060171;5.7570944
+;Crottin de Chavignol;Affineur Dubois - Boulay;18300;Chavignol;60;;47.33765655;2.8012337083
 14.png;Fromage de Chevre;;;;;;;
 15.png;Fromage de Chevre;LAITrie COOPve;;Vicq sur Nahon;;45;47.1067293;1.5305954
 16.png;Le tentation Chevre;Etoile du Vercors;;Vercors;180;17;45.2006257;5.7509848
