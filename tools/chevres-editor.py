@@ -25,7 +25,7 @@ class ChevreEditor:
     root = None
     photo_index = 0
     csv_headers = []
-    all_csv_rows = []
+    csv_rows = []
 
     imglabel = None
     statusmsg = None
@@ -123,18 +123,30 @@ class ChevreEditor:
         print(message)
         self.statusmsg.set(message)
 
+    def load_datadir(self, data_dir):
+        from pathlib import Path
+        self.csv_headers = ['imgpath', 'name', 'ferme', 'code', 'ville', 'poids', 'grasse', 'lat', 'lng']
+        # For each image in directory add to row
+        for image_file in Path(data_dir).rglob('*png'):
+            row = ['']*9
+            row[0] = os.path.basename(image_file)
+            self.csv_rows.append(row)
+            print(image_file)
+        # print(self.csv_rows)
+
     def load_csv(self, filename):
-        with open(csv_to_read, 'r') as csvfile:
+        with open(filename, 'r') as csvfile:
             spamreader = csv.reader(csvfile, delimiter=';', quotechar='"')
             all_csv = list(spamreader)
             self.csv_headers = all_csv[0]
-            self.all_csv_rows = all_csv[1:]
+            print(self.csv_headers)
+            self.csv_rows = all_csv[1:]
 
     def save_csv(self, *args):
         # Save current first
-        self.all_csv_rows[self.photo_index] = self.form2row()
+        self.csv_rows[self.photo_index] = self.form2row()
         # Concatenate with headers
-        final_csv = [self.csv_headers] + self.all_csv_rows
+        final_csv = [self.csv_headers] + self.csv_rows
         self.show_status("Saving csv to {} ...".format(out_csv_file_path))
         with open(out_csv_file_path, 'w') as csvfiletosave:
             csv_writer = csv.writer(csvfiletosave, delimiter=';',
@@ -148,12 +160,12 @@ class ChevreEditor:
         self.name_entry.focus()
         my_row = None
         try:
-            self.all_csv_rows[self.photo_index] = self.form2row()
+            self.csv_rows[self.photo_index] = self.form2row()
             self.photo_index = self.photo_index + step
-            my_row = self.all_csv_rows[self.photo_index]
+            my_row = self.csv_rows[self.photo_index]
         except IndexError:
             self.photo_index = 0
-            my_row = self.all_csv_rows[self.photo_index]
+            my_row = self.csv_rows[self.photo_index]
         self.show_status('Display {}'.format(my_row[1]))
         self.row2form(my_row)
 
@@ -223,8 +235,8 @@ class ChevreEditor:
         self.imglabel.image = my_photo_image
 
     def run_loop(self):
-        print(self.all_csv_rows)
-        self.row2form(self.all_csv_rows[0])
+        print(self.csv_rows)
+        self.row2form(self.csv_rows[0])
         self.root.mainloop()
 
 
@@ -235,8 +247,15 @@ if __name__ == '__main__':
     else:
         csv_to_read = out_csv_file_path
 
-    print(csv_to_read)
     my_editor = ChevreEditor()
-    my_editor.load_csv(csv_to_read)
+
+    my_editor.load_datadir(data_path)
+    # sys.exit()
+
+    # if os.path.exists(csv_to_read):
+    #     my_editor.load_csv(csv_to_read)
+    # else:
+    #     my_editor.load_datadir(data_path)
+
     my_editor.init_display()
     my_editor.run_loop()
