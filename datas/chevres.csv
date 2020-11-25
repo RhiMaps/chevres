@@ -1,166 +1,33 @@
-imgpath,name,shop,lng,lat
-10.png,"Le Regal Fermier","farm",5.0398519,45.1617455
-11.png,"Obsthof Hemmes","farm",8.0114411,49.9587815
-14.png,"Menallack Farm","farm",-5.1510037,50.1375307
-15.png,"Hofladen Fam. M. Oppliger (Self Service)","farm",7.6810829,46.762803
-16.png,"Agriturismo La Schiavenza","farm",8.024021,45.4344284
-17.png,"Ferme Gautard","farm",0.1861255,48.939315
-18.png,"Fromagerie Les Fermiers Basco-Béarnais","farm",-0.6064925,42.9773892
-19.png,"GAEC de la Forêt","farm",0.1843401,48.8524208
-1.png,"La Godinière","farm",0.7247418,49.0104193
-20.png,"Ferme de Cutesson","farm",0.2161612,48.9262834
-21.png,"Ferme de Coubertin","farm",2.056642,48.7018954
-22.png,"Kern's Hofladen","farm",8.053603,48.5924072
-23.png,"Rettig's Hofladen","farm",8.0632798,48.596674
-24.png,"Schätzles Hofladen","farm",8.0733838,48.2938427
-25.png,"Fromagerie","farm",4.6368224,45.4700377
-26.png,"Anett's Buurelade","farm",7.7917707,47.594472
-27.png,"Chèvrerie de Baradozic","farm",-4.3183352,48.4527782
-28.png,"Les Cabannes","farm",1.1398183,45.0128561
-29.png,"Ferme Le Petit Potager","farm",-3.0922835,47.5833051
-2.png,"Yann Pierrel - producteur de légumes","farm",6.7264516,47.9748952
-30.png,"undefined","farm",6.7263048,47.975203
-31.png,"Domaine des Cheminières","farm",1.9917528,43.2956653
-32.png,"La Chèvre Rit","farm",-1.0717478,46.2060484
-33.png,"undefined","farm",1.852181,43.1959129
-34.png,"Les Jardins de Saint-Sernin","farm",1.6702465,43.4409617
-35.png,"Fromages de chèvre De Belay","farm",6.8379712,43.5859722
-36.png,"Obsthof & Brennerei Weber","farm",8.0639495,48.5968686
-37.png,"La croisée des Fermes","farm",4.8411873,45.6392105
-38.png,"La Baronnie","farm",-0.1809222,48.7563198
-39.png,"La ferme Rabillier","farm",-1.1020603,46.2867275
-3.png,"undefined","farm",4.7008122,45.910466
-40.png,"undefined","farm",-3.4734255,37.9992355
-41.png,"undefined","farm",-3.4744458,38.0019199
-42.png,"undefined","farm",-3.4714106,38.0033645
-43.png,"undefined","farm",-3.4737552,37.9993825
-44.png,"Mrs Watts' Farm Produce","farm",-6.2990273,49.9177028
-45.png,"Ferme les Étamines","farm",-1.3500916,47.0604088
-46.png,"Fromagerie Durand","farm",0.1558318,48.8809723
-47.png,"Gautard frères","farm",0.1615973,48.9393434
-48.png,"Ferme Cueillette de Tréboul","farm",2.03351,43.2728877
-4.png,"undefined","farm",4.706366,45.9153928
-5.png,"Le Clos du Mont","farm",3.1877821,45.4580802
-6.png,"Weingut Fernand Cina S.A.","farm",7.5760695,46.310567
-7.png,"Vergers","farm",0.1112708,48.9144623
-8.png,"Queso Convento Tórtoles de Esgueva","farm",-4.0220528,41.8193996
-9.png,"undefined","farm",2.1224921,48.7990544
-10.png,"undefined","farm",2.2473001,48.8068384
-11.png,"undefined","farm",2.0872323,49.0247263
-14.png,"Haxaire","farm",7.1820768,48.1445768
-15.png,"Vulkanhof","farm",6.9143593,50.1285862
-16.png,"Etter Gemüse und Jungpflanzen","farm",7.182954,46.9553792
-17.png,"Ferme des Pampilles","farm",0.3426445,48.774643
-18.png,"Cal Anzi","farm",1.9667482,41.4131502
-19.png,"Ferme Grandemange","farm",6.7892708,48.0813288
-1.png,"Bauernladen Otten","farm",6.9214063,50.1103382
-20.png,"Ferme attitude","farm",1.4495942,43.6009504
-21.png,"Walthers Naturgut","farm",7.5503415,49.1534249
-22.png,"Vogtshof Lädele","farm",7.8969598,48.0316373
-23.png,"Fromagerie La Ligne Bleu","farm",7.4749871,49.1489577
-24.png,"Vente à la Ferme","farm",0.1730805,48.9582348
-25.png,"L'Escargotière","farm",0.3136593,48.8368267
-26.png,"EARL de la Montagne","farm",6.4749692,47.871637
-27.png,"Marché Fermier","farm",0.6464026,48.1844131
-28.png,"undefined","farm",7.15254,49.4780209
-29.png,"undefined","farm",6.1379105,43.9218952
-2.png,"Ferme de la Cré","farm",4.5455354,46.6133032
-30.png,"La ferme de Philippe","farm",4.4752974,49.1588366
-31.png,"Ferme Alain LAURENT","farm",6.7919808,47.9769007
-32.png,"GAEC de la Chèvrerie des Filletières","farm",4.684231,46.6679937
-33.png,"undefined","farm",4.6819555,46.6709333
-34.png,"Marché fermier","farm",0.0418891,45.2726397
-35.png,"Ferme de la Roche Martel","farm",0.6504008,47.6156378
-36.png,"Cidrerie Benoit-Bouvier","farm",-2.5123268,48.4850526
-37.png,"Ferme de la Pereire","farm",3.083896,45.6747029
-38.png,"GAEC des 13 Vents","farm",3.0325752,45.694895
-39.png,"Ferme de Fons des Ores","farm",3.1759835,45.5005618
-3.png,"La Ferme des Terres Creuses","farm",3.4562108,45.5916754
-40.png,"Marie et Vincent Tricot","farm",3.1671011,45.7021185
-41.png,"Distillerie Henri Gros","farm",0.4206473,44.2634893
-42.png,"Cout-Circuit magasin de producteurs","farm",-3.5592015,47.8156148
-43.png,"Glaces","farm",-3.5421028,47.7930106
-44.png,"La Ferme de Levallois","farm",2.2772248,48.8928636
-45.png,"Coopérative fromagère Jeune Montagne","farm",2.8520356,44.6872978
-46.png,"Au Paradis des Poules","farm",8.053771,48.840566
-47.png,"Chez Murielle","farm",8.0559629,48.8439678
-48.png,"Souleilles, Le Musée du Foie Gras","farm",0.8433006,44.3323274
-4.png,"La Ferme du Spahi","farm",2.2372933,48.9366821
-5.png,"Gaec du Cheiron","farm",7.0599768,43.7916028
-6.png,"undefined","farm",-4.269066,48.5768399
-7.png,"Obstparadies","farm",7.7189166,47.8885744
-8.png,"undefined","farm",-4.5498635,48.4827155
-9.png,"La Petite Fermière","farm",2.5070183,46.7221842
-10.png,"Bourgueil Jean-Marie Armirault","farm",0.2236575,47.2941772
-11.png,"GAEC Gauthier Pierre et Rodolphe","farm",0.2239299,47.2934409
-14.png,"EARL Deschamps Christophe","farm",0.2231074,47.2902433
-15.png,"La Fontaine aux Fougères","farm",0.2228997,47.29031
-16.png,"Logis de la Pataudière","farm",0.3207774,47.0381741
-17.png,"La Fermière","farm",5.5935197,45.1273227
-18.png,"undefined","farm",-2.3321545,42.894181
-19.png,"undefined","farm",-2.3168367,42.8900694
-1.png,"Ferme de la Couture","farm",1.9578754,49.0488416
-20.png,"Ferme du parc","farm",5.7540715,44.9535991
-21.png,"undefined","farm",1.5142199,48.7632343
-22.png,"Panier Paysan","farm",4.1624979,45.2889663
-23.png,"La ferme des Genestes","farm",1.2233842,44.9801691
-24.png,"Harschberger Hofladen","farm",7.1185428,49.468886
-25.png,"undefined","farm",7.6878407,47.1602586
-26.png,"undefined","farm",7.6866258,47.1607711
-27.png,"Jardins oasis","farm",4.2448936,45.494699
-28.png,"Hofladen Klug","farm",7.8871232,49.4959447
-29.png,"Jardin de Cocagnes","farm",7.129122,43.7409738
-2.png,"E.S.A.T. LES HARDYS-BEHELEC","farm",-2.4331905,47.8003747
-30.png,"C'tout bio","farm",2.0776932,49.0231483
-31.png,"Familie Odermatt","farm",8.0057312,47.1853708
-32.png,"undefined","farm",3.9592073,44.0909063
-33.png,"Fruitière à comté de la Vallée du Hérisson","farm",5.7750751,46.6621882
-34.png,"Boutique paysanne","farm",4.362985,44.5057152
-35.png,"undefined","farm",-1.4290432,46.2289654
-36.png,"undefined","farm",3.8604704,44.118408
-37.png,"Le verger de Venoix","farm",-0.4007169,49.1760084
-38.png,"Miel de Sully","farm",4.4713172,47.0090246
-39.png,"undefined","farm",6.807204,48.0926157
-3.png,"Les Jardins Épicés","farm",5.8054298,45.1451645
-40.png,"Ferme Maurice","farm",6.7743662,48.1254303
-41.png,"El Huerto alimentación","farm",-3.6962449,40.40106
-42.png,"Les Vergers de la Malonie","farm",1.4605638,45.4742804
-43.png,"undefined","farm",2.9538704,48.3984213
-44.png,"Jardins de la Croisière","farm",3.287422,48.1806966
-45.png,"Beckekarlihof","farm",7.955948,48.3509432
-46.png,"undefined","farm",7.6374049,45.044853
-47.png,"undefined","farm",2.4480661,43.2078867
-48.png,"Hofladen","farm",7.9223311,46.8089052
-4.png,"undefined","farm",-3.7121029,47.9782272
-5.png,"Maison Fontina","farm",7.3478071,45.7408254
-6.png,"L'Escargot de Cleurie","farm",6.7491338,48.0809735
-7.png,"Laurel","farm",-3.8208082,43.4608553
-8.png,"La ferme du Treuil Charré","farm",-0.9966418,46.1359173
-9.png,"Ferme de Vertessec","farm",-0.7695798,45.0028349
-10.png,"Bisonzucht","farm",7.6521412,49.4923838
-11.png,"La Charme","farm",6.7426546,45.875832
-14.png,"El Bargueño Toledano - Exposición","farm",-4.0229311,39.8602242
-15.png,"La Super Halle d'Oullins","farm",4.8199645,45.7130084
-16.png,"Chueweid","farm",7.4780346,46.8728059
-17.png,"Rohrer","farm",7.4950904,46.8993736
-18.png,"Ferme le Bourgas","farm",4.7705087,43.9484551
-19.png,"Schneider Hof - Hofladen","farm",7.7485685,47.8635543
-1.png,"Bauer Grundhöfer - Hofladen","farm",6.5876088,49.7142939
-20.png,"Hueso Sierra de Cazorla","farm",-3.131137,37.9146522
-21.png,"Comestibles-Piensos Felisa","farm",-3.0664987,37.8457814
-22.png,"La Ferme d'Agen","farm",2.6782793,44.3574339
-23.png,"Ferme de Leyritz","farm",1.2566368,45.8295642
-24.png,"La Ferme du Coin","farm",1.2403761,45.8201579
-25.png,"Saveurs Fermières","farm",1.2486548,45.8332006
-26.png,"Saveurs Fermières","farm",1.2576031,45.8456651
-27.png,"undefined","farm",3.0912063,36.7281961
-28.png,"Zoohandlung Marlene Burger","farm",6.9041628,49.4779654
-29.png,"Michel Suire","farm",-0.0868945,47.0779895
-2.png,"Au pré des fermes","farm",2.4305271,47.1364798
-30.png,"Glöckle Mühle","farm",7.8420962,48.2101683
-31.png,"undefined","farm",5.353705,43.9317219
-32.png,"Masson-Blondelet","farm",2.9543745,47.2852065
-33.png,"undefined","farm",2.7981819,47.3370951
-34.png,"Hofladen Walter","farm",7.7164754,48.0072496
-35.png,"Eichelberger Hof","farm",7.1697277,49.2287255
-36.png,"Hofladen","farm",7.7729571,48.0611527
+imgpath;name;ferme;code;ville;poids;grasse;lat;lng
+2.png;Le Fanchon du Gâtinais;P. Allard, Les Chapoutins;89270;Essert;;45;47.6329963;6.8159189
+3.png;goat milk;;;Toulouse;;;43.6044622;1.4442469
+4.png;Le Palet;La Ferme du Logis;79220;CHAMPDENIERS;150;20;46.4862923;-0.4029359
+5.png;Sant Gil D'albio;;;Albio, Tarragona;;;41.5614002;1.2867609
+6.png;fromage Mi-chevre;Fromagerie de la Mélusine;;Cloué, Vienne;;30;46.4417494;0.1637495
+7.png;P. Bertrand;P. Bertrand;;SantRanges, Cher;80;45;47.4981798;2.7726737
+8.png;LE Chevro'ya;Claudine Bernard Viau;;Ile D'yeu;130;45;46.71018105;-2.34917690050466
+9.png;Le Bigoton;La Chevrerie d'authon;;Loire et Cher;;45;47.024882399999996;2.5753333606655704
+10.png;Buche kg pur chevre;;;;1kg;;;
+11.png;La Fourrierre;Girardot C.;52360;Frécourt;;;47.9514392;5.4578072
+12.png;Cabri du Berry;Fromagerie Hubert Triballat;18220;Rians;150;45;43.6060171;5.7570944
+13.png;Crottin de Chavignol;Affineur Dubois - Boulay;18300;Chavignol;60;;47.33765655;2.8012337083
+14.png;Fromage de Chevre;;;;;;;
+15.png;Fromage de Chevre;LAITrie COOPve;;Vicq sur Nahon;;45;47.1067293;1.5305954
+16.png;Le tentation Chevre;Etoile du Vercors;;Vercors;180;17;45.2006257;5.7509848
+17.png;Fromage de Chévre;ferme de la pagenie;87310;Gorre;;;45.7413889;0.9836111
+18.png;Fromage de Chevre;laiterie coopve de saint loup;79600;saint-loup-sur-thouet;175;45;46.78993575;-0.16798675478870345
+19.png;le pelardon cigalios;Fromagerie Cigaloise;30170;Saint Hippolyte-du-fort;60;45;43.9643602;3.8564364
+20.png;Chevre;Le pré Laval;41130;chatillon sur cher;150;;47.2740542;1.4941856
+21.png;pelardon d'amélie;;;;65;45;;
+22.png;Fromage de chèvre fermier;;;;;;;
+23.png;le moissac des cevennes;sca fromagere des cevennes;48110;Moissac Vallee Francaise;60;45;44.1632402;3.7850987
+24.png;mon cabri;sa chevrechard;;la chapelle saint laurent;170;45;46.746221;-0.4766783
+25.png;la chevre verte;;24300;;35;45;45.5921971;0.7009928180916553
+26.png;blanchettes;laiterie de villefagnan;;villefagnan;;45;46.0120389;0.0795577
+27.png;le biscaron;;;;;;;
+28.png;pjacquin;p. jacquin & fils;36600;la vernelle;150;25;47.2479803;1.5439112
+29.png;LE SAFFRIN FERMIER;;;montchamp;;45;48.9118458;-0.757650053490807
+30.png;crottin de chavignol;chevrerie du grand bardelet;45500;poilly-lez-gien;60;45;47.6769496;2.5932801
+31.png;charolais;gaec mathieu gevalrc;71430;saint vincent bragny;;;46.5337782;4.1258842
+32.png;picodon;producteurs fromagers;26400;;60;;44.8143709;5.163241736590438
+33.png;Fromage de chèvre fermier;;;;100;;;
