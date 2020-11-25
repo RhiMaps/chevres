@@ -62,7 +62,7 @@ var chevresLayer = L.geoCsv(null, {
 $.ajax({
     type: 'GET',
     dataType: 'text',
-    url: 'datas/chevres_vincent_geocoded.csv',
+    url: 'datas/chevres.csv',
     error: function() {
         alert('Chargement impossible');
     },
