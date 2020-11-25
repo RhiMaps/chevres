@@ -7,8 +7,8 @@ from PIL import ImageTk, Image
 from geopy.geocoders import Nominatim
 from geopy.exc import GeocoderTimedOut
 
-IMG_W = 400
-IMG_H = 400
+IMG_W = 600
+IMG_H = 600
 
 # Set the project root path, that is the parent dir of the current script
 script_dir = os.path.dirname(os.path.realpath(__file__))
@@ -241,7 +241,9 @@ class ChevreEditor:
 
 
 if __name__ == '__main__':
+
     csv_to_read = None
+
     if len(sys.argv) == 2:
         csv_to_read = sys.argv[1]
     else:
@@ -250,12 +252,11 @@ if __name__ == '__main__':
     my_editor = ChevreEditor()
 
     my_editor.load_datadir(data_path)
-    # sys.exit()
 
-    # if os.path.exists(csv_to_read):
-    #     my_editor.load_csv(csv_to_read)
-    # else:
-    #     my_editor.load_datadir(data_path)
+    if os.path.exists(csv_to_read):
+        my_editor.load_csv(csv_to_read)
+    else:
+        my_editor.load_datadir(data_path)
 
     my_editor.init_display()
     my_editor.run_loop()
