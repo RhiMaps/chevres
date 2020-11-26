@@ -7,8 +7,14 @@ from PIL import ImageTk, Image
 from geopy.geocoders import Nominatim
 from geopy.exc import GeocoderTimedOut
 
-IMG_W = 600
-IMG_H = 600
+try:
+    from chevres_config import IMG_W, IMG_H, IMG_EXT
+except ModuleNotFoundError:
+    IMG_W = 600
+    IMG_H = 600
+    IMG_EXT = "png"
+    pass
+
 
 # Set the project root path, that is the parent dir of the current script
 script_dir = os.path.dirname(os.path.realpath(__file__))
@@ -120,31 +126,32 @@ class ChevreEditor:
         self.root.bind("<Control-g>", self.geocode_row)
 
     def show_status(self, message=''):
-        print(message)
+        # TODO: log it instead !
         self.statusmsg.set(message)
 
     def load_datadir(self, data_dir):
         from pathlib import Path
         self.csv_headers = ['imgpath', 'name', 'ferme', 'code', 'ville', 'poids', 'grasse', 'lat', 'lng']
         # For each image in directory add to row
-        for image_file in Path(data_dir).rglob('*png'):
+        all_images = sorted(Path(data_dir).rglob('*'+IMG_EXT))
+        for image_file in all_images:
             row = ['']*9
             row[0] = os.path.basename(image_file)
             self.csv_rows.append(row)
-            print(image_file)
-        # print(self.csv_rows)
 
     def load_csv(self, filename):
         with open(filename, 'r') as csvfile:
             spamreader = csv.reader(csvfile, delimiter=';', quotechar='"')
             all_csv = list(spamreader)
             self.csv_headers = all_csv[0]
-            print(self.csv_headers)
             self.csv_rows = all_csv[1:]
 
     def save_csv(self, *args):
         # Save current first
-        self.csv_rows[self.photo_index] = self.form2row()
+        try:
+            self.csv_rows[self.photo_index] = self.form2row()
+        except AttributeError:
+            pass
         # Concatenate with headers
         final_csv = [self.csv_headers] + self.csv_rows
         self.show_status("Saving csv to {} ...".format(out_csv_file_path))
@@ -214,7 +221,6 @@ class ChevreEditor:
         return my_row
 
     def row2form(self, my_row):
-        print(my_row)
         self.imgpath.set(my_row[0])
         self.name.set(my_row[1])
         self.weight.set(my_row[5])
@@ -235,7 +241,6 @@ class ChevreEditor:
         self.imglabel.image = my_photo_image
 
     def run_loop(self):
-        print(self.csv_rows)
         self.row2form(self.csv_rows[0])
         self.root.mainloop()
 
@@ -250,8 +255,6 @@ if __name__ == '__main__':
         csv_to_read = out_csv_file_path
 
     my_editor = ChevreEditor()
-
-    my_editor.load_datadir(data_path)
 
     if os.path.exists(csv_to_read):
         my_editor.load_csv(csv_to_read)
