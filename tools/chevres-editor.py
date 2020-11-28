@@ -12,7 +12,7 @@ try:
 except ModuleNotFoundError:
     IMG_W = 600
     IMG_H = 600
-    IMG_EXT = "png"
+    IMG_EXT = "JPG"
     pass
 
 
