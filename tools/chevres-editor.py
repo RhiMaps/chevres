@@ -140,7 +140,7 @@ class ChevreEditor:
             self.csv_rows.append(row)
 
     def load_csv(self, filename):
-        with open(filename, 'r') as csvfile:
+        with open(filename, 'r', encoding="utf8", errors='ignore') as csvfile:
             spamreader = csv.reader(csvfile, delimiter=';', quotechar='"')
             all_csv = list(spamreader)
             self.csv_headers = all_csv[0]
