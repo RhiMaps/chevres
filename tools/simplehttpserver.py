@@ -3,6 +3,12 @@ from http.server import HTTPServer, SimpleHTTPRequestHandler, test
 import sys
 import os
 
+try:
+    from chevres_config import HTTP_PORT
+except ModuleNotFoundError:
+    HTTP_PORT = 8000
+    pass
+
 
 class CORSRequestHandler(SimpleHTTPRequestHandler):
     def end_headers(self):
@@ -15,4 +21,4 @@ if __name__ == '__main__':
     root_path = os.path.abspath(os.path.join(script_path, os.pardir))
     os.chdir(root_path)
 
-    test(CORSRequestHandler, HTTPServer, port=int(sys.argv[1]) if len(sys.argv) > 1 else 8000)
+    test(CORSRequestHandler, HTTPServer, port=int(sys.argv[1]) if len(sys.argv) > 1 else HTTP_PORT)

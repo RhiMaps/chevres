@@ -1,3 +1,5 @@
 IMG_W = 200
 IMG_H = 200
 IMG_EXT = "JPG"
+
+HTTP_PORT = 8000
