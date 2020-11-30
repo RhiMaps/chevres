@@ -15,7 +15,6 @@ except ModuleNotFoundError:
     IMG_EXT = "png"
     pass
 
-
 # Set the project root path, that is the parent dir of the current script
 script_dir = os.path.dirname(os.path.realpath(__file__))
 root_dir = os.path.abspath(os.path.join(script_dir, os.pardir))
@@ -49,7 +48,7 @@ class ChevreEditor:
 
     def init_display(self):
         self.root = Tk()
-        self.root.title("Hollo")
+        self.root.title("Goatstor")
 
         mainframe = ttk.Frame(self.root, padding='3 3 12 12')
         mainframe.grid(column=0, row=0, sticky=(N, W, E, S))
@@ -113,8 +112,9 @@ class ChevreEditor:
 
         ttk.Button(mainframe, text="Prev", command=self.previous_photo).grid(column=3, row=10, sticky=E)
         ttk.Button(mainframe, text="Next", command=self.next_photo).grid(column=3, row=11, sticky=E)
-        ttk.Button(mainframe, text="Save", command=self.save_csv).grid(column=3, row=12, sticky=E)
-        ttk.Button(mainframe, text="GeoCode", command=self.geocode_row).grid(column=3, row=13, sticky=E)
+        ttk.Button(mainframe, text="GeoCode", command=self.geocode_row).grid(column=3, row=12, sticky=E)
+        ttk.Button(mainframe, text="Save", command=self.save_csv).grid(column=3, row=13, sticky=E)
+        ttk.Button(mainframe, text="LoadDir", command=self.load_datadir).grid(column=3, row=14, sticky=E)
 
         for child in mainframe.winfo_children():
             child.grid_configure(padx=5, pady=5)
@@ -122,22 +122,42 @@ class ChevreEditor:
         self.name_entry.focus()
         self.root.bind("<Control-Left>", self.previous_photo)
         self.root.bind("<Control-Right>", self.next_photo)
-        self.root.bind("<Return>", self.save_csv)
+        self.root.bind("<Control-s>", self.save_csv)
         self.root.bind("<Control-g>", self.geocode_row)
+
+        self.show_status("Loaded {} images".format(len(self.csv_rows)))
 
     def show_status(self, message=''):
         # TODO: log it instead !
-        self.statusmsg.set(message)
+        try:
+            self.statusmsg.set(message)
+        except AttributeError:
+            pass
 
-    def load_datadir(self, data_dir):
+    def csv_has_image(self, image_path):
+        if self.csv_rows:
+            images_list = [row[0] for row in self.csv_rows]
+            res = image_path in images_list
+        else:
+            res = False
+        return res
+
+    def load_datadir(self, data_dir=None, *args):
+        if data_dir is None:
+            data_dir = data_path
         from pathlib import Path
         self.csv_headers = ['imgpath', 'name', 'ferme', 'code', 'ville', 'poids', 'grasse', 'lat', 'lng']
-        # For each image in directory add to row
-        all_images = sorted(Path(data_dir).rglob('*'+IMG_EXT))
+        # For each image in directory add to rows
+        all_images = sorted(Path(data_dir).rglob('*' + IMG_EXT))
         for image_file in all_images:
-            row = ['']*9
-            row[0] = os.path.basename(image_file)
+            image_path = os.path.basename(image_file)
+            # add only if not already in rows
+            if self.csv_has_image(image_path):
+                continue
+            row = [''] * 9
+            row[0] = image_path
             self.csv_rows.append(row)
+        self.show_status("Loaded {} images".format(len(self.csv_rows)))
 
     def load_csv(self, filename):
         with open(filename, 'r', encoding="utf8", errors='ignore') as csvfile:
