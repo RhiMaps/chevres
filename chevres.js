@@ -30,7 +30,7 @@ var chevresLayer = L.geoCsv(null, {
     onEachFeature: function(feature, layer) {
         var popupContent = '<b>' + feature.properties['name'] + '</b></br>';
         if (feature.properties['poids']) popupContent += ' ' + feature.properties['poids'] + ' gr.';
-        if (feature.properties['grasse']) popupContent += ' ' + feature.properties['grasse'] + '% mat. grasses';
+        if (feature.properties['grasse']) popupContent += ' ' + feature.properties['grasse'] + '% M. G.';
         if (feature.properties['ferme']) popupContent += '</br>' + feature.properties['ferme'];
         if (feature.properties['code']) popupContent += '</br>' + feature.properties['code'];
         if (feature.properties['ville']) popupContent += ' ' + feature.properties['ville'];
