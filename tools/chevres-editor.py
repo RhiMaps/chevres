@@ -160,7 +160,7 @@ class ChevreEditor:
         self.show_status("Loaded {} images".format(len(self.csv_rows)))
 
     def load_csv(self, filename):
-        with open(filename, 'r', encoding="utf8", errors='ignore') as csvfile:
+        with open(filename, 'r', encoding='utf-8') as csvfile:
             spamreader = csv.reader(csvfile, delimiter=';', quotechar='"')
             all_csv = list(spamreader)
             self.csv_headers = all_csv[0]
@@ -175,7 +175,7 @@ class ChevreEditor:
         # Concatenate with headers
         final_csv = [self.csv_headers] + self.csv_rows
         self.show_status("Saving csv to {} ...".format(out_csv_file_path))
-        with open(out_csv_file_path, 'w') as csvfiletosave:
+        with open(out_csv_file_path, 'w', encoding="utf-8") as csvfiletosave:
             csv_writer = csv.writer(csvfiletosave, delimiter=';',
                                     quotechar='"', quoting=csv.QUOTE_MINIMAL,
                                     lineterminator='\n')
