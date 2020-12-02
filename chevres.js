@@ -23,6 +23,7 @@ var mapqLayer = L.tileLayer('https://{s}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.p
     subdomains: ['otile1', 'otile2', 'otile3', 'otile4']
 });
 
+var cluster = new L.MarkerClusterGroup();
 
 var chevresLayer = L.geoCsv(null, {
     firstLineTitles: true,
@@ -76,12 +77,11 @@ $.ajax({
         alert('Chargement impossible');
     },
     success: function(csv) {
-        //var cluster = new L.MarkerClusterGroup();
         chevresLayer.addData(csv);
-        //cluster.addLayer(bankias);
-        //map.addLayer(cluster);
-        map.addLayer(chevresLayer);
-        //map.fitBounds(chevresLayer.getBounds());
+        cluster.addLayer(chevresLayer);
+        map.addLayer(cluster);
+        // map.addLayer(chevresLayer);
+        map.fitBounds(cluster.getBounds());
     },
     complete: function() {
         //$('#cargando').delay(500).fadeOut('slow');
@@ -97,6 +97,7 @@ var baseLayers = {
 
 var overLays = {
     "chevres": chevresLayer,
+    "autres chevres": cluster,
 };
 
 // Layers switchers
