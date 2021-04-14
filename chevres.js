@@ -30,16 +30,20 @@ var chevresLayer = L.geoCsv(null, {
     fieldSeparator: ';',
     onEachFeature: function(feature, layer) {
         var popupContent = '<b>' + feature.properties['name'] + '</b></br>';
+        /*
         if (feature.properties['poids']) popupContent += ' ' + feature.properties['poids'] + ' gr.';
         if (feature.properties['grasse']) popupContent += ' ' + feature.properties['grasse'] + '% M. G.';
-        if (feature.properties['ferme']) popupContent += '</br>' + feature.properties['ferme'];
+        */
+        if (feature.properties['ferme']) popupContent +=  feature.properties['ferme'];
         if (feature.properties['code']) popupContent += '</br>' + feature.properties['code'];
         if (feature.properties['ville']) popupContent += ' ' + feature.properties['ville'];
         if (feature.properties['imgpath']){
-            popupContent += '<img class="chevre" src="./datas/' + feature.properties['imgpath'] + '"/>';
+            img_src='./datas/' + feature.properties['imgpath']
         }else{
-            popupContent += '<img class="chevre" src="./images/chevre.png"/>';
+            img_src="./images/chevre.png"
         }
+//            popupContent += '<img class="chevre" src="./datas/' + feature.properties['imgpath'] + '"/>';
+        popupContent += '<a href="'+img_src+'"><img class="chevre" src="'+img_src+'"/></a>';
         var popup = L.popup({
             minWidth: '400'
         }).setContent(popupContent);
