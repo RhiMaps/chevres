@@ -2,6 +2,19 @@
 
 Goat's cheese label map
 
+A geolocalised collection of french goatcheeses
+
+## See online
+
+https://rhimaps.github.io/chevres
+
+## Run locally
+
+`python tools/simplehttpserver.py`
+and open localhost:8000
+
+or simply open `index.html` in you navigator
+
 ## chevres-editor.py
 
 ### installing 
