@@ -13,16 +13,37 @@ header * {
 
 header h1 {
     position: absolute;
-    margin-top: 10px;
+    margin-top: 8px;
     margin-left: 25px;
     height: 100%;
 }
 header img
 {
-    height: 50px;
-    width: 50px;
+    margin-top: 3px;
+    margin-left: 5px;
+    height: 45px;
+    width: 45px;
     display: inline;
 }
+header #b-tooltip{
+    border-radius: 15px;
+    padding: 10px;
+    top: 30px;
+    left: 60px;
+    position: absolute;
+    z-index: 1000;
+    border: 1pt solid black;
+    height: 20px;
+    width: 100px;
+    background-color: white;
+    display: none ;
+    /*
+    */
+}
+
+img.title-img:hover + #b-tooltip {
+        display: block;
+    }
 
 nav {
     height: 100%;
@@ -45,6 +66,7 @@ li {
 li a{
     text-decoration: none;
     color: black;
+    font-size: 19px;
 }
 li:hover{
     border: solid 1pt black;
