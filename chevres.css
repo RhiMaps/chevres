@@ -73,12 +73,14 @@ li:hover{
 }
 
 
-#map {height: 100%; }
+#map {
+height: 100%;
+}
 
 body {margin:0; height: 100%;}
 
 body>div#content {
-    height: 100%
+    height: 95%
 }
 
 div.leaflet-popup-content {
