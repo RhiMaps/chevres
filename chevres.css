@@ -1,9 +1,68 @@
-#map {height: 100%; }
-body {margin:0; height: 100%;}
-body>div { height: 100%}
-div.leaflet-popup-content {
-width: 220px !important;
+
+header {
+    border-top: solid black 1pt;
+    border-bottom: solid black 1pt;
+    height: 55px;
+    position: relative;
+    display: block;
 }
+
+header * {
+    display: inline;
+}
+
+header h1 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 25px;
+    height: 100%;
+}
+header img
+{
+    height: 50px;
+    width: 50px;
+    display: inline;
+}
+
+nav {
+    height: 100%;
+    display: inline;
+}
+
+ul{
+    position: absolute;
+    right: 20px;
+    display: inline-block;
+    height: 100%;
+}
+li {
+    margin: 10px;
+    list-style: none;
+    display: inline;
+    border: solid 1pt white;
+    padding: 5px;
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+li:hover{
+    border: solid 1pt black;
+}
+
+
+#map {height: 100%; }
+
+body {margin:0; height: 100%;}
+
+body>div#content {
+    height: 100%
+}
+
+div.leaflet-popup-content {
+    width: 220px !important;
+}
+
 html {height: 100%;}
 img.chevre {
     width: 200px;
