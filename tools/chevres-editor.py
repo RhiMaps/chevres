@@ -5,7 +5,7 @@ from tkinter import ttk
 from PIL import ImageTk, Image
 
 from geopy.geocoders import Nominatim
-from geopy.exc import GeocoderTimedOut
+from geopy.exc import GeocoderTimedOut, GeocoderUnavailable
 
 try:
     from chevres_config import IMG_W, IMG_H, IMG_EXT
@@ -205,17 +205,21 @@ class ChevreEditor:
     def geocode_row(self, *args):
         geolocator = Nominatim(user_agent="my_application")
         my_row = self.form2row()
-        adress = my_row[3] + " " + my_row[4]
+        adress = {'postalcode': my_row[3], 'city': my_row[4]}
         self.show_status("Geocoding '{}' ....".format(adress))
+        geocodes = None
         try:
             geocodes = geolocator.geocode(adress, exactly_one=False)
         except GeocoderTimedOut:
-            geocodes = None
             sys.stderr.write(adress)
+        except GeocoderUnavailable:
+            print('geocoderunavailable')
+
         # if you dont find
         if geocodes is None:
             # look without postcode
-            geocodes = geolocator.geocode(my_row[3], exactly_one=False)
+            adress = { 'city': my_row[4]}
+            geocodes = geolocator.geocode(adress, exactly_one=False)
             # or
             if geocodes is None:
                 # just give up
