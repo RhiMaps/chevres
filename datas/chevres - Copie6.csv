@@ -1,0 +1,642 @@
+imgpath;name;ferme;code;ville;poids;grasse;lat;lng
+P1010462.JPG;XV du Pic;;81140;Penne;;;44.0766863;1.730843
+P1010463.JPG;;Laize - Mas de Laval;12260;Salvignac Cajarc;;45;44.46197470403345;1.992346568911699
+P1010464.JPG;Picodon;"GAEC ""Biquette de la Jaubernie""";07000;Coux;;;44.7358;4.62254
+P1010465.JPG;Picodon;affinage SARL Peytot;07230;Planzolles;;;44.4856;4.15422
+P1010466.JPG;Chèvre fermier du Pic Saint-Loup;La Chèvrerie;34380;Notre Dame de Londres;;31;43.8260009;3.777499
+P1010467.JPG;Chèvre fermier;Ferme de la Pouège;31310;Gensac sur Garonne;;;43.2177;1.13252
+P1010469.JPG;Chèvre au lait cru;Ferme de Peyret;82120;Gensac;;;43.9535799;0.9561022
+P1010470.JPG;Le Coucouronnais;Fromagerie de la Laoune;07470;Coucouron;120;45;44.7993;3.9713
+P1010471.JPG;Caprie;Fromagerie coopérative du chateau;;Puyreaux;;45;45.860786;0.2102767
+P1010472.JPG;Le Soignon;;79400;Saint Maixent l'Ecole;180;45;46.4096855;-0.2019344
+P1010473.JPG;;Laiterie coopérative;;La Mothe Saint Héray;150;50;46.3606454;-0.1119382
+P1010474.JPG;Chevry;Poitouraine;;;180;50;;
+P1010475.JPG;Le Cabrou;Bergelou;;;175;45;;
+P1010476.JPG;;;37310;Reignac sur Indre;;45;47.2323025;0.9163536
+P1010477.JPG;Pur Chèvre;Coopérative Sèvre et Belle;;Celles sur Belle;175;48;46.2398517;-0.21955643269729774
+P1010478.JPG;Saint-Loup;Laiterie coopérative;79120;Lezay;200;45;46.2652441;-0.0103871
+P1010479.JPG;;;;Saint-Varent;180;45;46.8892151;-0.2357384
+P1010480.JPG;La Belle Poitevine;;53089;Laval;180;45;48.0763683;-0.7608901
+P1010481.JPG;Chevrita;Fromagerie coopérative;;Aunac;175;45;45.91516675;0.25241943063982875
+P1010482.JPG;Caprisi;Laiterie Coopérative Sèvre et Belle;;Celles sur Belle;200;45;46.2398517;-0.21955643269729774
+P1010483.JPG;;;;;180;45;;
+P1010484.JPG;Champichèvre;Laiterie coopérative;;Champigny sur Veude;180;45;47.0666526;0.323543
+P1010485.JPG;Soignon;;;;;;;
+P1010486.JPG;;Bergelou;79120;Lezay;175;45;46.2652441;-0.0103871
+P1010487.JPG;;Laiterie coopérative;79120;Lezay;200;45;46.2652441;-0.0103871
+P1010488.JPG;Riblaire;Laiterie de Riblaire;79330;Saint Varent;180;50;46.8892151;-0.2357384
+P1010489.JPG;Le Bougon;Bougon;79800;La Mothe Bougon;180;;46.38238956420264;-0.09473122656773493
+P1010490.JPG;;Fromagerie de Soignon;79400;Soignon;180;46;46.3879542;-0.1904068
+P1010491.JPG;;;;;;;;
+P1010492.JPG;La Mélusine;Poitouraine;86130;Dissay;180;25;46.69488300842844;0.41715736897791034
+P1010493.JPG;Blanchette;Saint-Loup;17700;Surgères;175;45;46.1052715;-0.7511152
+P1010494.JPG;Le Chèvre;Soignon;;Soignon;180;45;46.3879542;-0.1904068
+P1010495.JPG;;Uni-coop;37240;Ligueil;175;48;47.041306;0.8162905
+P1010497.JPG;;Fromagerie coopérative;;Bougon;150;46;46.3690994;-0.0663592
+P1010498.JPG;Chevrita;;86400;Saint-Saviol;180;45;46.1330509;0.2430067
+P1010499.JPG;Chevrita;;86400;Civray;180;45;46.1508396;0.2950117
+P1010500.JPG;;Europ Lait;86700;Couhé-Vérac;180;50;46.3000548;0.2441465
+P1010501.JPG;Riblaire;Riblaire;;Saint Varent;180;45;46.8892151;-0.2357384
+P1010502.JPG;Le Bougon;Bougon;79000;La Mothe Bougon;180;50;46.32433029163445;-0.48459967268969345
+P1010503.JPG;Chèvre allégé;;86130;Dissay;180;25;46.69488300842844;0.41715736897791034
+P1010504.JPG;;Laiterie coop.;79120;Lezay;175;45;46.2652441;-0.0103871
+P1010505.JPG;Chevrita;;16440;Claix;180;45;45.5547638;0.0429787
+P1010506.JPG;;;79800;Bougon;180;50;46.3690994;-0.0663592
+P1010508.JPG;La Mothe;Laiterie coop.;79800;La Mothe Saint Héray;;46;46.3606454;-0.1119382
+P1010509.JPG;;Soignon;;;180;;;
+P1010510.JPG;;Coop. Sèvre et Belle;79370;Celles sur Belle;20à;48;46.257713949999996;-0.21020600942692336
+P1010511.JPG;Chevrita;Laiterie coop. Lescure Bougon;86400;Saint Saviol;180;45;46.1330509;0.2430067
+P1010512.JPG;;;;;;;;
+P1010513.JPG;;;;;;;;
+P1010514.JPG;;;;;;;;
+P1010515.JPG;;;;;;;;
+P1010516.JPG;;;;;;;;
+P1010517.JPG;;;;;;;;
+P1010518.JPG;;;;;;;;
+P1010519.JPG;;;;;;;;
+P1010520.JPG;;Laiterie coop.;79120;Lezay;175;45;46.2652441;-0.0103871
+P1010521.JPG;Double crème;Soignon;;;180;;;
+P1010522.JPG;;;;;;;;
+P1010523.JPG;;;;;;;;
+P1010524.JPG;;;;;;;;
+P1010525.JPG;Le Cabrou;Bergelou;17700;Surgères;170;45;46.1052715;-0.7511152
+P1010526.JPG;;;;;;;;
+P1010527.JPG;;;;;;;;
+P1010528.JPG;;;;;;;;
+P1010529.JPG;;;;;;;;
+P1010530.JPG;Chevrita;;16440;Claix;180;45;45.5547638;0.0429787
+P1010531.JPG;;;;;;;;
+P1010532.JPG;;;;;;;;
+P1010533.JPG;;;;;;;;
+P1010534.JPG;;;;;;;;
+P1010535.JPG;;;;;;;;
+P1010536.JPG;;;;;;;;
+P1010537.JPG;;;;;;;;
+P1010538.JPG;;;;;;;;
+P1010539.JPG;Tomme de Chambrille;Poitou Chèvre;79800;La Mothe Saint Héray;;25;46.3606454;-0.1119382
+P1010540.JPG;;;;;;;;
+P1010541.JPG;;;;;;;;
+P1010542.JPG;;Coopérative Sèvre et Belle;;Celles sur Belle;180;50;46.2398517;-0.21955643269729774
+P1010543.JPG;;Coopérative Sèvre et Belle;;Celles sur Belle;180;48;46.2398517;-0.21955643269729774
+P1010544.JPG;;Laitery coopérative de Lézay;;Lézay;175;45;46.2652441;-0.0103871
+P1010545.JPG;Le Bicounet de Ligueil;Uni-ccop;37240;Ligueil;175;48;47.041306;0.8162905
+P1010546.JPG;Riblaire;Laiterie de Ribalire;79330;Saint Varent;180;45;46.8892151;-0.2357384
+P1010547.JPG;La Mélusine;;Laiterie coopérative de la Mélusine;Cloué;180;50;46.4417494;0.1637495
+P1010548.JPG;;;;;;;;
+P1010549.JPG;;;;;;;;
+P1010550.JPG;;;;;;;;
+P1010551.JPG;;;;;;;;
+P1010552.JPG;;Soignon;79400;Saint-Maixent;180;45;46.4064362;-0.2011195
+P1010553.JPG;;;;;;;;
+P1010554.JPG;;P. Jaqcuin;;La Vernelle;;45;47.2479803;1.5439112
+P1010555.JPG;Selles sur Cher;Jacquin Pascal et fils;;La Vernelle;150;;47.2479803;1.5439112
+P1010556.JPG;;;16230;Puyréaux;130;45;45.87633604525778;0.20031783760434202
+P1010557.JPG;Crottin de Chavignol;Chamaillard Frères;18240;Santranges;60;45;47.4981798;2.7726737
+P1010558.JPG;Crottin de Chavignol;Chamaillard Frères;18240;Santranges;60;;47.4981798;2.7726737
+P1010559.JPG;;Ferme de Forgues;09120;Loubens;;;43.0446009;1.5457108
+P1010560.JPG;;;;;;;;
+P1010561.JPG;;;;;;;;
+P1010562.JPG;Grizou Cévenol;La fromagerie des Cévennes;48110;Moissac-Vallée-Française;70;;44.1632402;3.7850987
+P1010563.JPG;Petit Pouligny Saint Pierre;;;toulouse;150;;43.6044622;1.4442469
+P1010567.JPG;Etche Goinia;EARL Etchegonia - Chez Minjou;64240;Ayherre;;;43.38125241068826;-1.245565698791896
+P1010568.JPG;;;;;;;;
+P1010569.JPG;;;;;;;;
+P1010570.JPG;;;;;;;;
+P1010571.JPG;;;;;;;;
+P1010572.JPG;;;;;;;;
+P1010573.JPG;;;;;;;;
+P1010574.JPG;;;;;;;;
+P1010575.JPG;;;;;;;;
+P1010576.JPG;;;;;;;;
+P1010577.JPG;;;;;;;;
+P1010578.JPG;;;;;;;;
+P1010579.JPG;;;;;;;;
+P1010580.JPG;;;;;;;;
+P1010581.JPG;;;;;;;;
+P1010582.JPG;;;;;;;;
+P1010583.JPG;;;;;;;;
+P1010584.JPG;;;;;;;;
+P1010585.JPG;;;;;;;;
+P1010586.JPG;;;;;;;;
+P1010587.JPG;;;;;;;;
+P1010588.JPG;;;;;;;;
+P1010589.JPG;;;;;;;;
+P1010590.JPG;;;;;;;;
+P1010591.JPG;;;;;;;;
+P1010592.JPG;Petit Billy;Triballat Noyal;35530;Noyal sur Vilaine;200;45;48.1140789;-1.5234735
+P1010593.JPG;Selles sur Cher;P. Jacquin;;;150;;;
+P1010594.JPG;;Bougault;81700;Puylaurens;;45;43.5726147;2.0134036
+P1010595.JPG;Cabécou;Sarl Chênevert;24300;Saint Front la Rivière;35;45;45.4730556;0.7272222
+P1010597.JPG;La Biquette;CLRL Verneuil Reignac;37600;Verneuil sur Indre;220;45;47.0556467;1.042284776658962
+P1010598.JPG;Le pebre d'Aï de la Sainte Beaume;Denis Carel;83136;La Roquebrussanne;;45;43.3402271;5.9763214
+P1010599.JPG;Picodon;SCOFF Valcrest;26400;Crest;62.5;45;44.7282675;5.0236641
+P1010600.JPG;;Chèvrerie du Puy violent;15140;Vielmur;;45;45.1302995;2.5135734
+P1010602.JPG;Crottin de Chavignol;Triballat;18220;Rians;60;;47.1855657;2.6131277
+P1010603.JPG;;GAEC des prés;26310;La Batie des Fonds;;;44.5140237;5.6385549
+P1010604.JPG;Rocamadour fermier;;46500;Alvignac;35;;44.826862;1.692873
+P1010605.JPG;Van Dooren B.;La Font salée;15400;Apchon;;45;45.2489252;2.6935258
+P1010606.JPG;Cabécou fermier;Ferme Linol;46200;Lachapelle Auzac;35;45;44.938139199999995;1.480577314052891
+P1010607.JPG;Le Moissac des Cévennes;;Moissac Vallée Française;48110;60;45;44.1632402;3.7850987
+P1010608.JPG;Lesty éleveur-producteur;Ferme des 3 ponts;78610;Auffargis;;45;48.6998475;1.8861417
+P1010609.JPG;Sainte Beaume;Ambroggi-Bourdillat;83136;Méounes lès Montrieux;;45;43.2812379;5.970272
+P1010610.JPG;Le rondon d'Alvignac;Les Gariottes;46500;Alvignac;120;45;44.826862;1.692873
+P1010611.JPG;Le palet Maursois;Chantal Vigier;15600;Labrunie;40;;44.779053;2.2602377
+P1010612.JPG;Le Terrou;Ferme Mazet;46500;Gramat;;45;44.7789948;1.723394
+P1010613.JPG;Le Valaine;Ferme de la Valaine;76790;Etretat;;;49.7074621;0.2031905
+P1010614.JPG;Fromage de chèvre du Verdon;Earl Le Verdon;83630;Bauduen;;45;43.7332746;6.1762369
+P1010615.JPG;Cabécou de Rocamadour;Francis Verdier;46130;Vailles;;45;44.8796957;1.821405
+P1010616.JPG;Le grand Vielleux;Affineur Dubois-Boulay;18300;Sancerre;120;45;47.3307251;2.8390333
+P1010617.JPG;Crottin de chèvre;Triballat;18220;Rians;60;45;47.1855657;2.6131277
+P1010618.JPG;Le petit Hervé;J.-L. Pascreau;85210;Saint Juire Champgillon;180;45;46.5788889;-1.0261111
+P1010619.JPG;Pélardon des Cévennes;Fromagerie de Moissac;48110;Moissac-Vallée-Française;70;50;44.1632402;3.7850987
+P1010620.JPG;Crottin de Chavignol;Dubois-Boulay;18300;Chavignol;60;;47.3375789;2.799142
+P1010621.JPG;Le Puy du Fou;Loic Chupin;85500;Les Herbiers;180;45;46.8714322;-1.0150302
+P1010622.JPG;Rocamadour;Le Terrou;46500;Gramat;35;;44.7789948;1.723394
+P1010623.JPG;Rocamadour;Ferme du Mas de Thomas;46160;Saint Sulpice;35;;44.5697598;1.7910767
+P1010624.JPG;Chèvre sur feuille;Affineur Jean-Noêl Lavergne;79500;Chail;200;45;46.2021241;-0.07569542361856593
+P1010625.JPG;Crottin de Chavignol;Triballat;18220;Rians;60;;47.1855657;2.6131277
+P1010626.JPG;Rocamadour;Fromagerie Verdier;46130;Vailles;35;45;44.8796957;1.821405
+P1010627.JPG;Chèvre du Périgord;Lucien Risser;24190;Neuvic sur l'Isle;135;45;45.0635281;0.4274931
+P1010628.JPG;Amalthée;Laiterie coop.;79110;Chef-Boutonne;140;45;46.1159102;-0.07939626915895345
+P1010629.JPG;Pélardon cigalois;Fromagère cigaloise;30170;Saint Hippolyte du Fort;60;;43.9643602;3.8564364
+P1010630.JPG;Pélardon des Cévennes;Leclere;30270;Saint Jean du Gard;60;;44.1053053;3.8846803
+P1010631.JPG;Le Bigoton;La chèvrerie d'Authon;41310;Authon;;45;47.6457008;0.8949185
+P1010632.JPG;Bouchon de Sancerre;Triballat;18220;Rians;25;45;47.1855657;2.6131277
+P1010633.JPG;Le bois des Louvières;Milhiet;28500;Marsauceux;60;;48.7267834;1.4397718
+P1010634.JPG;Selles sur Cher;Affineur Michel Hardy;41130;Meusnes;140;;47.2508617;1.4988676
+P1010635.JPG;Crottin de Chavignol;Ferme du Tureau;18400;Primelles;65;;46.9284821;2.2120717
+P1010636.JPG;Crottin du Berry;Coop. fromagère;36210;Anjouin;60;45;47.1890873;1.8024553
+P1010637.JPG;Clacbitou;La Racotière;71420;Génelard;;45;46.5806827;4.2355945
+P1010638.JPG;;Affineur E. Gaillard;41700;Contres;300;45;47.42095475;1.4506054323549362
+P1010639.JPG;Crottin;Fromagerie artisanale;24300;Saint Martial de Valette;70;45;45.5172222;0.6508333
+P1010640.JPG;Crottin du Morvan;Les Chapoutins;89270;Essert;60;45;47.6392148;3.7878518
+P1010641.JPG;;Chevenet;71870;Hurigny;;45;46.3485824;4.7965849
+P1010642.JPG;;Patrick Boucheron;45270;Nesploy;;45;47.99625;2.36045
+P1010643.JPG;Crottin de Chavignol;Chamaillard;18240;Santranges;60;;47.4981798;2.7726737
+P1010644.JPG;;Chamaillard affineur;;Santranges;140;;47.4981798;2.7726737
+P1010645.JPG;Le Chabichou;Gaillard affineur;41700;Contres;150;45;47.42095475;1.4506054323549362
+P1010646.JPG;Le Soignon;Fromagerie de Soignon;79400;Saint Maixent;110;45;46.4064362;-0.2011195
+P1010647.JPG;;;;;;;;
+P1010648.JPG;;;;;;;;
+P1010649.JPG;;;;;;;;
+P1010650.JPG;;;;;;;;
+P1010651.JPG;Pas de Blenac;;17250;Sainte Gemme;150;45;45.7721771;-0.8877092
+P1010652.JPG;;;;;;;;
+P1010653.JPG;;;;;;;;
+P1010654.JPG;;;;;;;;
+P1010658.JPG;Selles sur Cher;Moreau / Ferme de Bellevue;41400;Pontlevoy;150;;47.38812;1.25279
+P1010659.JPG;Areilladou;Laiterie Carrier;07600;Vals les Bains;60;;44.6553304;4.365739
+P1010660.JPG;Rocamadour;Bigeat;19600;Estivals;35;;45.0282312;1.4621302
+P1010661.JPG;Mothais sur feuille;Danmaille;79110;Chef-Boutonne;200;;46.1159102;-0.07939626915895345
+P1010662.JPG;Crottin de Chavignol;Laiterie de Feux;18220;Les Aix d'Angillon;60;;47.1990036;2.5715314
+P1010663.JPG;La fleur de Sologne;Hardy affineur;41130;Chatillon sur Cher;80;;47.2740542;1.4941856
+P1010664.JPG;Bûchette;Fromages Basilou;61170;Saint Julien sur Sarthe;;;48.4904906;0.3578075
+P1010665.JPG;Le Malvault;La fromagerie du Thouet;79130;Azay sur Thouet;180;50;46.6244678;-0.3490138
+P1010666.JPG;;Barot / Domaine de Sansac;24300;Saint Front sur Nizonne;;;45.4822222;0.6366667
+P1010667.JPG;;;;;;;;
+P1010668.JPG;La Caprovine;Ferme de Périchon;07210;Rochessauve;;;44.6796032;4.6260059
+P1010670.JPG;;GAEC de Très le Serre;07000;Pranles;;;44.7720543;4.5745467
+P1010671.JPG;;Laiterie coop. de Soignon;79400;Soignon;45;;46.3879542;-0.1904068
+P1010672.JPG;;;79120;Lezay;;45;46.2652441;-0.0103871
+P1010673.JPG;Le bon Chabi;Réchard;79430;La Chapelle Saint Laurent;;45;46.746221;-0.4766783
+P1010674.JPG;Mi chèvre;;79120;Lezay;;;46.2652441;-0.0103871
+P1010675.JPG;Mi chèvre;Laiterie coop.;79500;Chail;;30;46.2021241;-0.07569542361856593
+P1010676.JPG;Mi chèvre;Coop. laitière;79370;Celles sur Belle;;30;46.257713949999996;-0.21020600942692336
+P1010677.JPG;Soignon;Laiterie coop.;79400;Soignon;;45;46.3879542;-0.1904068
+P1010678.JPG;Chail;;79500;Chail;;45;46.2021241;-0.07569542361856593
+P1010679.JPG;La Chevrette;;36600;Valençay;;50;47.161511;1.5666078
+P1010653.JPG;Chail;Laiterie coop. de la Mothe Saint Héray;79500;la Mothe Saint Héray;130;50;46.360836899999995;-0.11121345326829199
+P1010681.JPG;Le Clerville;;86200;Clerville;;45;46.9535743;0.1845211
+P1010680.JPG;;Fromagerie coop.;79400;Soignon;;46;46.3879542;-0.1904068
+P1010682.JPG;Cabecou;Fromagerie Capribio;24300;Saint Front sur Nizonne;;;45.4822222;0.6366667
+P1010683.JPG;Petit Pouligny Saint Pierre;Fromagerie d'Anjouin;36300;Le Blanc;150;;46.633292;1.062694
+P1010684.JPG;Le Biquet;;37120;Champigny sur Veude;;45;47.0666526;0.323543
+P1010685.JPG;;Laiterie coop.;79110;Chef Boutonne;;45;46.1159102;-0.07939626915895345
+P1010686.JPG;Chabi pur chèvre;Fromagerie R. Pouet;79200;Parthenay;;45;46.6481266;-0.2472687
+P1010687.JPG;;R. Pouet;79200;Parthenay;;45;46.6481266;-0.2472687
+P1010688.JPG;Chabi de chèvre;;86130;Dissay;;45;46.6985186;0.4280238
+P1010689.JPG;L'excellent Chabichou;Laiterie de Saint Jean de Sauves;86330;Saint Jean de Sauves;;45;46.8419879;0.0907786
+P1010691.JPG;L'excellent Chabichou;Laiterie de Saint Jean de Sauves;86330;Saint Jean de Sauves;;45;46.8419879;0.0907786
+P1010692.JPG;;Laiterie fromagerie coop.;79330;Saint Varent;;45;46.8892151;-0.2357384
+P1010693.JPG;;Laiterie coop.;79120;Lézay;;45;46.2652441;-0.0103871
+P1010694.JPG;Chail;Laiterie coop.;79500;Chail;;45;46.2021241;-0.07569542361856593
+P1010695.JPG;La Mothe;Laiterie coop.;79800;La Mothe Saint Héray;;;46.3606454;-0.1119382
+P1010696.JPG;;;79800;Bougon;;46;46.3690994;-0.0663592
+P1010697.JPG;;Fromagerie coop.;79800;Bougon;;46;46.3690994;-0.0663592
+P1010698.JPG;La Mélusine;Laiterie coop. de la Mélusine;86600;Cloué;;;46.4417494;0.1637495
+P1010699.JPG;;;86000;;;45;46.58126778941604;0.3423758120900182
+P1010700.JPG;;Fromagerie de Saint Jean de Sauves;86330;Saint Jean de Sauves;;40;46.8419879;0.0907786
+P1010701.JPG;;Laiterie coop.;79110;Chef Boutonne;;40;46.1159102;-0.07939626915895345
+P1010702.JPG;;Fromagerie de Saint Jean de Sauves;86330;Saint Jean de Sauves;;30;46.8419879;0.0907786
+P1010703.JPG;;Laiterie Rousseau;86170;Champigny le Sec;;50;46.7240679;0.1552080514527101
+P1010704.JPG;;Laiterie coop.;79400;Soignon;;40;46.3879542;-0.1904068
+P1010705.JPG;;Laiterie coop.;37120;Champigny sur Veude;;45;47.0666526;0.323543
+P1010706.JPG;Le Manon;;79330;Riblaire;;30;46.8887918;-0.2016182
+P1010707.JPG;L'Aumonerie;;79330;Riblaire;;30;46.8887918;-0.2016182
+P1010708.JPG;Le Riblaire;;79330;Riblaire;;;46.8887918;-0.2016182
+P1010709.JPG;Le Riblaire;;79330;Riblaire;;30;46.8887918;-0.2016182
+P1010710.JPG;Le Riblaire;;79330;Riblaire;;46;46.8887918;-0.2016182
+P1010711.JPG;;Fromagerie de La Mothe Saint Héray;79800;La Mothe Saint Héray;;30;46.3606454;-0.1119382
+P1010712.JPG;;Fromagerie de Bougon;79800;Bougon;;30;46.3690994;-0.0663592
+P1010713.JPG;Le Préféré;Fromagerie de Soignon;79400;Soignon;;;46.3879542;-0.1904068
+P1010714.JPG;;Fromagerie coop. de la Mélusine;86600;Cloué;;30;46.4417494;0.1637495
+P1010715.JPG;;;86170;Champigny le Sec;;30;46.7240679;0.1552080514527101
+P1010716.JPG;;Laiterie coop. de Chail;79500;Chail;;30;46.2021241;-0.07569542361856593
+P1010717.JPG;Selles sur Cher;;36210;Anjouin;150;45;47.2033741;1.7655909
+P1010718.JPG;Bougon;Fromagerie coop. de Bougon;79800;Bougon;;50;46.3690994;-0.0663592
+P1010719.JPG;;;;;;;;
+P1010720.JPG;;D. Barot Domaine de Sansac;16450;Beaulieu sur Sonnette;200;45;45.9245316;0.3827793
+P1010721.JPG;Sainte Maure;Ets Guillaumin;36600;Vicq sur Nahon;250;45;47.1067293;1.5305954
+P1010723.JPG;;Chamaillard;18240;Santranges;100;45;47.4981798;2.7726737
+P1010724.JPG;;;;;;;;
+P1010725.JPG;;;;;;;;
+P1010726.JPG;Sainte Maure;;86000;;240;45;46.58126778941604;0.3423758120900182
+P1010727.JPG;;;;;;;;
+P1010728.JPG;;Fromagerie de Lencloitre;86140;Lencoitre;60;45;46.79679886640395;0.3387421472777045
+P1010729.JPG;Cabécou de Rocamadour;Francis Verdier;46130;Vailles;;45;44.8796957;1.821405
+P1010730.JPG;Le cendré de Fonteveille;H. Pineau;86100;Fonteveille;250;45;46.8366742;0.5191947
+P1010732.JPG;Sainte Maure fermier Le père Bafien;F. Plisson;86170;Neuville de Poitou;300;;46.6852065;0.2450626
+P1010733.JPG;;;;;;;;
+P1010734.JPG;Petit Billy;Laiterie Triballat;35530;Noyal sur Vilaine;200;45;48.1140789;-1.5234735
+P1010735.JPG;;;;;;;;
+P1010737.JPG;La bûche paillée de Bazelle;Coop. fromagère Anjouin;36210;Anjouin;280;45;47.1890873;1.8024553
+P1010739.JPG;Cabri de Touraine;Cloche d'or;37260;Pont de Ruan;150;45;47.2609556;0.5746953
+P1010740.JPG;Rocamadour;Les fermiers du Rocamadour;46500;Alvignac;35;;44.826862;1.692873
+P1010741.JPG;Coeur fidèle;Brun fils;07270;Lamastre;80;50;44.9854888;4.5796372
+P1010742.JPG;Le Galet;P. Hardy;41130;Meusnes;350;45;47.2508617;1.4988676
+P1010743.JPG;Chèvre des côteaux du Lembron;Fromagerie artisanale de Bergonne;63;Bergonne;50;45;45.5057523;3.2216229
+P1010744.JPG;Picodon;Ferme de Pépeyrier;07800;Saint Laurent du Pape;;;44.823;4.76113
+P1010745.JPG;Chèvre fermier à la pâte d'olive;Alain et Eva Barbagli;06910;Amirat;;45;43.8755363196326;6.9557885208650525
+P1010747.JPG;;e.a.r.l. Le Père Bafien;86170;Neuville de Poitou;200;45;46.6852065;0.2450626
+P1010748.JPG;Crottin de Chavignol;e.a.r.l. C. Bardin;18380;Ivoy le Pré;60;;47.3455728;2.4848823
+P1010749.JPG;;Chèvrerie d'Authon;41310;Authon;;45;47.6457008;0.8949185
+P1010750.JPG;;Chèvrelogne;45240;La Ferté Saint Aubin;280;45;47.7169399;1.9442053
+P1010751.JPG;Selles sur Cher;P. Jacquin;36600;La Vernelle;150;;47.2479803;1.5439112
+P1010752.JPG;Chavignol fermier;;18300;Chavignol;60;;47.3375789;2.799142
+P1010753.JPG;Rocamadour;Ribière;46240;Montfaucon;35;;44.687293;1.5611106
+P1010754.JPG;;;;;;;;
+P1010755.JPG;Selles sur Cher;Fromagerie Anjouin;36210;Anjouin;150;23;47.2033741;1.7655909
+P1010756.JPG;Capri-Perche;J. P. Moreau;28480;Fretigny;;;48.3729788;0.9682199
+P1010757.JPG;Crottin de Chavignol;Fromagerie Cl. Crochet / Affineur Bué;18300;Sancerre;60;;47.3307251;2.8390333
+P1010758.JPG;Le petit Perche;e.a.r.l. du petit Perche;41270;Romilly du Perche;;;47.9452041;0.9834193
+P1010761.JPG;Crottin de Chavignol;Laiteries Triballat;18220;Rians;60;;47.1855657;2.6131277
+P1010762.JPG;Rocamadour;F. et J.A. Reix;46150;Lherm;35;;44.56454;1.24482
+P1010764.JPG;;;;;;;;
+P1010765.JPG;;;;;;;;
+P1010766.JPG;;;79330;Saint Varent;60;45;46.8892151;-0.2357384
+P1010767.JPG;;;;;;;;
+P1010768.JPG;;LIDL;67000;Strasbourg;60;;48.584614;7.7507127
+P1010769.JPG;;C. et D. Garrigue;24260;Journiac;;22.5;44.9657531;0.8851038
+P1010770.JPG;;;;;;;;
+P1010771.JPG;Rocamadour;Ferme du Mas de Thomas;46160;Saint Sulpice;35;;44.5697598;1.7910767
+P1010772.JPG;Crottin de Chavignol;Laiteries H. Triballat;18220;Rians;60;45;47.1855657;2.6131277
+P1010773.JPG;Crottin de Chavignol;Laiterie H. Triballat;18220;Rians;60;;47.1855657;2.6131277
+P1010774.JPG;Crottin;;18220;Rians;60;24;47.1855657;2.6131277
+P1010775.JPG;Chèvretines;Fromagerie de Terroirs;53000;Laval;60;45;48.0710377;-0.7723499
+P1010776.JPG;Chèvretine;Fromagerie de Terroirs;53000;Laval;60;45;48.0710377;-0.7723499
+P1010777.JPG;Le Mont du Charolais;Domaine du Crevant;71760;Grury;;;46.6744136;3.9116429
+P1010778.JPG;Crottin de chèvre;Fromagerie Dubois-Boulay;18300;Chavignol;60;45;47.3375789;2.799142
+P1010779.JPG;;Domaine de la Haute Lèbre;04150;Revest du Bion;;45;44.082589;5.5475433
+P1010780.JPG;Crottin de Chavignol;Laiterie H. Triballat;18220;Rians;60;;47.1855657;2.6131277
+P1010781.JPG;Pélardon;Fromagerie des Cévennes;48100;Moissac Vallée Française;60;;44.1632402;3.7850987
+P1010782.JPG;;;;;;;;
+P1010783.JPG;Crottin de Chavignol;Didier Graillot;18300;Ménétréol sous Sancerre;60;;47.3169293;2.8560838
+P1010784.JPG;Rocamadour;Fromagers du Quercy;46300;Le Vigan;35;45;44.7413611;1.4341858
+P1010785.JPG;Valençay-Levroux;P. Jacquin;36600;La Vernelle;;45;47.2479803;1.5439112
+P1010786.JPG;le chèvre du moulin;Daniel Beguier;79500;Saint Romans les Melle;;45;46.2065534;-0.190105
+P1010787.JPG;;Michel Berthault;18110 ;Vignoux sous les Aix;50;45;47.1863044;2.4643816
+P1010788.JPG;Cabécou du Périgord;Fromagerie Le Chèvrefeuille;24300;Saint Martial de Valette;35;45;45.5172222;0.6508333
+P1010789.JPG;Selles sur Cher;P. Jacquin;36600;La Vernelle;150;25;47.2479803;1.5439112
+P1010790.JPG;Rocamadour;Les Gariottes;46500;Alvignac;35;;44.826862;1.692873
+P1010791.JPG;Rocamadour;GAEC de l'autre chèvre;46130;Prudhomat;35;;44.8988034;1.8132528
+P1010792.JPG;Le Tarentais;J.M. Arpin;73700;Seez;;45;45.6227366;6.8005956
+P1010793.JPG;Pyramide;;79430;La Chapelle Saint Laurent;;;46.746221;-0.4766783
+P1010794.JPG;Le Crottin fermier;Ets Guillaumin;36600;Vicq sur Nahon;80;45;47.1067293;1.5305954
+P1010795.JPG;;Ets Guillaumin;3660;Vicq sur Nahon;120;45;47.1067293;1.5305954
+P1010796.JPG;Valencay-Levroux;SAFF;41130;Meusnes;220;45;47.2508617;1.4988676
+P1010797.JPG;Le Bougon;Bougon;79800;La Mothe Saint Héray;;;46.3606454;-0.1119382
+P1010798.JPG;Le Chèvre en coeur;M. Hardy;41130;Meusnes;130;45;47.2508617;1.4988676
+P1010799.JPG;Crottin de Chavignol;H. Triballat;18220;Rians;60;;47.1855657;2.6131277
+P1010800.JPG;Selles sur Cher;Fromagerie de Varennes sur Fouzon;36210;Varennes sur Fouzon;150;45;47.2040395;1.5878269872340425
+P1010801.JPG;Selles sur Cher;Ets Guillaumin;36600;Vicq sur Nahon;150;;47.1067293;1.5305954
+P1010802.JPG;;P. Hardy;41130;Meusnes;140;45;47.2508617;1.4988676
+P1010803.JPG;Valencay-Levroux;P. Jacquin;36600;La Vernelle;250;45;47.2479803;1.5439112
+P1010804.JPG;Selles sur Cher;P. Jacquin et fils;36600;La Vernelle;150;25;47.2479803;1.5439112
+P1010805.JPG;Chavignol;Ferme du Port-Aubry;58200;Cosne sur Loire;60;;47.4151279;2.9315659
+P1010806.JPG;Picodon de la Drôme;Laiterie coop.;26400;Crest;60;50;44.7282675;5.0236641
+P1010807.JPG;Banon fermier du Lubéron;e.a.r.l. Morard;84480;Buoux;;45;43.8312883;5.3776276
+P1010808.JPG;Taupinière charentaise;Sté Jousseaume;16440;Roullet;270;45;45.5835252;0.0477083
+P1010809.JPG;Valencay-Levroux;P. Hardy;41130;Meusnes;220;45;47.2508617;1.4988676
+P1010810.JPG;Valencay-Levroux;M. Hardy;41130;Meusnes;220;45;47.2508617;1.4988676
+P1010811.JPG;Cabecou fermier;GAEC Dournes;46100;Capdenac le Haut;;45;44.5808234;2.0696065
+P1010812.JPG;Brique d'Auvergne;Laiterie Garmy;63190;Pont Astier;180;45;45.8668293;3.4743858
+P1010813.JPG;;;;;;;;
+P1010814.JPG;;;;;;;;
+P1010815.JPG;;;;;;;;
+P1010816.JPG;;;;;;;;
+P1010817.JPG;;;;;;;;
+P1010818.JPG;;;;;;;;
+P1010819.JPG;;;;;;;;
+P1010820.JPG;;;;;;;;
+P1010821.JPG;;;;;;;;
+P1010822.JPG;;;;;;;;
+P1010823.JPG;;;;;;;;
+P1010824.JPG;;;;;;;;
+P1010825.JPG;;;;;;;;
+P1010826.JPG;;;;;;;;
+P1010827.JPG;Le Villageois;GAEC les 3 villages;79170;Périgné;;45;46.1875362;-0.2536718
+P1010828.JPG;;;;;;;;
+P1010829.JPG;;;;;;;;
+P1010830.JPG;;;;;;;;
+P1010831.JPG;;;;;;;;
+P1010832.JPG;;;;;;;;
+P1010833.JPG;;Ferme de Peyret - Famille Serre;82120;Gensac;;;43.9535799;0.9561022
+P1010834.JPG;Braison Charentais;G. Jousseaume;16440;Roullet;80;45;45.5835252;0.0477083
+P1010835.JPG;Bouton de culotte;Capriferm;71000;Mâcon;;45;46.3036683;4.8322266
+P1010836.JPG;;;;;;;;
+P1010837.JPG;;;;;;;;
+P1010838.JPG;;;;;;;;
+P1010839.JPG;;;;;;;;
+P1010840.JPG;;;;;;;;
+P1010841.JPG;Chevrigny Charollais;;71870;Hurigny;;45;46.3485824;4.7965849
+P1010842.JPG;Sainte Maure de Touraine;Hardy - Guillaumin;41130;Châtillon sur Cher;250;;47.2740542;1.4941856
+P1010844.JPG;;GAEC Estip;46400;Autoire;120;22;44.8536389;1.8207854
+P1010845.JPG;;;;;;;;
+P1010846.JPG;;;;;;;;
+P1010847.JPG;;;;;;;;
+P1010848.JPG;;;;;;;;
+P1010849.JPG;;;;;;;;
+P1010850.JPG;;;;;;;;
+P1010851.JPG;Cabécou d'Autoire;Laurent Estip;46400;Autoire;120;;44.8536389;1.8207854
+P1010852.JPG;Cabécou de Roc-Amadour;Linol - GAEC de Maure;46200;Lachapelle Auzac;;45;44.938139199999995;1.480577314052891
+P1010853.JPG;Crottin de Chavignol;Chamaillard pour Rouzaire;18240;Santranges;60;;47.4981798;2.7726737
+P1010854.JPG;;;;;;;;
+P1010855.JPG;Rocamadour;Ferme des Roucans;46360;Sabadel Lauzès;35;;44.5674399;1.6029079
+P1010856.JPG;Rocamadour;La Borie d'Imbert;46500;Rocamadour;35;;44.7991877;1.6183521
+P1010857.JPG;Le Cabécou;Fromagerie Le Chèvrefeuille;24300;Nontron;;45;45.5293074;0.6622535
+P1010858.JPG;;;;;;;;
+P1010859.JPG;;;;;;;;
+P1010860.JPG;Rocamadour;Verdier;46130;Loubressac;35;;44.8716172;1.8042465
+P1010861.JPG;Le Chèvreton;Laiterie Garmy;63190;Pont Astier;220;45;45.8668293;3.4743858
+P1010862.JPG;Pélardon;Rose et Thierry Mounier;48320;Blajoux;60;;44.33731;3.48316
+P1010863.JPG;;;;;;;;
+P1010864.JPG;;;;;;;;
+P1010865.JPG;Le Chabi;S.A. Couturier;36300;Pouligny Saint Pierre;200;45;46.680865;1.0379637
+P1010866.JPG;Banon fermier;;26220;Cavet;100;45;44.52601985;5.035249304728209
+P1010867.JPG;Crottin de Chavignol;Ferme des Pelets;18220;Morogues;65;;47.2410392;2.5982296
+P1010868.JPG;Cabri de Touraine;S.A. lait. Cloche d'or;37260;Pont de Ruan;170;45;47.2609556;0.5746953
+P1010869.JPG;Rocamadour;Verdier;46130;Loubressac;35;;44.8716172;1.8042465
+P1010870.JPG;Banon de Banon;Romain Ripert / Fromagerie de Banon;04150;Banon;100;45;44.0381752;5.6296701
+P1010871.JPG;;;;;;;;
+P1010872.JPG;;;;;;;;
+P1010873.JPG;;;;;;;;
+P1010874.JPG;;;;;;;;
+P1010875.JPG;;;;;;;;
+P1010876.JPG;;;;;;;;
+P1010877.JPG;;;;;;;;
+P1010878.JPG;;;;;;;;
+P1010879.JPG;;;;;;;;
+P1010880.JPG;;;;;;;;
+P1010881.JPG;;;;;;;;
+P1010882.JPG;;;;;;;;
+P1010883.JPG;;;;;;;;
+P1010884.JPG;;;;;;;;
+P1010885.JPG;;;;;;;;
+P1010886.JPG;;;;;;;;
+P1010887.JPG;;;;;;;;
+P1010889.JPG;;;;;;;;
+P1010890.JPG;;;;;;;;
+P1010891.JPG;;;;;;;;
+P1010892.JPG;;;;;;;;
+P1010893.JPG;;;;;;;;
+P1010894.JPG;;;;;;;;
+P1010896.JPG;;;;;;;;
+P1010897.JPG;;;;;;;;
+P1010898.JPG;;;;;;;;
+P1010899.JPG;;;;;;;;
+P1010900.JPG;;;;;;;;
+P1010901.JPG;;;;;;;;
+P1010902.JPG;;;;;;;;
+P1010903.JPG;;;;;;;;
+P1010904.JPG;;;;;;;;
+P1010905.JPG;;;;;;;;
+P1010906.JPG;;;;;;;;
+P1010907.JPG;;;;;;;;
+P1010908.JPG;;;;;;;;
+P1010909.JPG;;;;;;;;
+P1010910.JPG;;;;;;;;
+P1010911.JPG;;;;;;;;
+P1010913.JPG;;;;;;;;
+P1010914.JPG;;;;;;;;
+P1010915.JPG;;;;;;;;
+P1010916.JPG;;;;;;;;
+P1010917.JPG;;;;;;;;
+P1010918.JPG;;;;;;;;
+P1010919.JPG;;;;;;;;
+P1010920.JPG;;;;;;;;
+P1010921.JPG;;;;;;;;
+P1010922.JPG;;;;;;;;
+P1010924.JPG;;;;;;;;
+P1010926.JPG;;;;;;;;
+P1010927.JPG;;;;;;;;
+P1010928.JPG;;;;;;;;
+P1010929.JPG;;;;;;;;
+P1010930.JPG;;;;;;;;
+P1010931.JPG;;;;;;;;
+P1010932.JPG;;;;;;;;
+P1010933.JPG;;;;;;;;
+P1010934.JPG;;;;;;;;
+P1010935.JPG;;;;;;;;
+P1010936.JPG;;;;;;;;
+P1010937.JPG;;;;;;;;
+P1010938.JPG;;;;;;;;
+P1010940.JPG;;;;;;;;
+P1010941.JPG;;;;;;;;
+P1010942.JPG;;;;;;;;
+P1010943.JPG;;;;;;;;
+P1010944.JPG;;;;;;;;
+P1010945.JPG;;;;;;;;
+P1010946.JPG;;;;;;;;
+P1010947.JPG;;;;;;;;
+P1010948.JPG;;;;;;;;
+P1010949.JPG;;;;;;;;
+P1010950.JPG;;;;;;;;
+P1010951.JPG;;;;;;;;
+P1010952.JPG;;;;;;;;
+P1010953.JPG;;;;;;;;
+P1010954.JPG;;;;;;;;
+P1010955.JPG;;;;;;;;
+P1010957.JPG;;;;;;;;
+P1010959.JPG;;;;;;;;
+P1010961.JPG;;;;;;;;
+P1010962.JPG;;;;;;;;
+P1010963.JPG;;;;;;;;
+P1010964.JPG;;;;;;;;
+P1010965.JPG;;;;;;;;
+P1010966.JPG;;;;;;;;
+P1010967.JPG;;;;;;;;
+P1010968.JPG;;;;;;;;
+P1010970.JPG;;;;;;;;
+P1010971.JPG;;;;;;;;
+P1010972.JPG;;;;;;;;
+P1010973.JPG;;;;;;;;
+P1010974.JPG;;;;;;;;
+P1010975.JPG;;;;;;;;
+P1010976.JPG;;;;;;;;
+P1010977.JPG;;;;;;;;
+P1010978.JPG;;;;;;;;
+P1010979.JPG;;;;;;;;
+P1010980.JPG;;;;;;;;
+P1010981.JPG;;;;;;;;
+P1010982.JPG;;;;;;;;
+P1010983.JPG;;;;;;;;
+P1010984.JPG;;;;;;;;
+P1010985.JPG;;;;;;;;
+P1010986.JPG;;;;;;;;
+P1010987.JPG;;;;;;;;
+P1010988.JPG;;;;;;;;
+P1010989.JPG;;;;;;;;
+P1010990.JPG;;;;;;;;
+P1010991.JPG;;;;;;;;
+P1010992.JPG;;;;;;;;
+P1010993.JPG;;;;;;;;
+P1010994.JPG;;;;;;;;
+P1010995.JPG;;;;;;;;
+P1010996.JPG;;;;;;;;
+P1010997.JPG;;;;;;;;
+P1010998.JPG;;;;;;;;
+P1010999.JPG;;;;;;;;
+P1020001.JPG;;;;;;;;
+P1020002.JPG;;;;;;;;
+P1020003.JPG;;;;;;;;
+P1020004.JPG;;;;;;;;
+P1020005.JPG;;;;;;;;
+P1020006.JPG;;;;;;;;
+P1020007.JPG;;;;;;;;
+P1020008.JPG;;;;;;;;
+P1020009.JPG;;;;;;;;
+P1020010.JPG;;;;;;;;
+P1020011.JPG;;;;;;;;
+P1020013.JPG;;;;;;;;
+P1020014.JPG;;;;;;;;
+P1020015.JPG;;;;;;;;
+P1020016.JPG;;;;;;;;
+P1020017.JPG;;;;;;;;
+P1020018.JPG;;;;;;;;
+P1020019.JPG;;;;;;;;
+P1020020.JPG;;;;;;;;
+P1020021.JPG;;;;;;;;
+P1020022.JPG;;;;;;;;
+P1020023.JPG;;;;;;;;
+P1020024.JPG;;;;;;;;
+P1020025.JPG;;;;;;;;
+P1020026.JPG;;;;;;;;
+P1020027.JPG;;;;;;;;
+P1020029.JPG;;;;;;;;
+P1020030.JPG;;;;;;;;
+P1020032.JPG;;;;;;;;
+P1020033.JPG;;;;;;;;
+P1020034.JPG;;;;;;;;
+P1020035.JPG;;;;;;;;
+P1020036.JPG;;;;;;;;
+P1020037.JPG;;;;;;;;
+P1020038.JPG;;;;;;;;
+P1020039.JPG;;;;;;;;
+P1020040.JPG;;;;;;;;
+P1020041.JPG;;;;;;;;
+P1020042.JPG;;;;;;;;
+P1020043.JPG;;;;;;;;
+P1020044.JPG;;;;;;;;
+P1020045.JPG;;;;;;;;
+P1020046.JPG;;;;;;;;
+P1020047.JPG;;;;;;;;
+P1020048.JPG;;;;;;;;
+P1020049.JPG;;;;;;;;
+P1020050.JPG;;;;;;;;
+P1020051.JPG;;;;;;;;
+P1020052.JPG;;;;;;;;
+P1020053.JPG;;;;;;;;
+P1020054.JPG;;;;;;;;
+P1020055.JPG;;;;;;;;
+P1020056.JPG;;;;;;;;
+P1020057.JPG;;;;;;;;
+P1020058.JPG;;;;;;;;
+P1020059.JPG;;;;;;;;
+P1020060.JPG;;;;;;;;
+P1020061.JPG;;;;;;;;
+P1020062.JPG;;;;;;;;
+P1020063.JPG;;;;;;;;
+P1020064.JPG;;;;;;;;
+P1020065.JPG;;;;;;;;
+P1020067.JPG;;;;;;;;
+P1020068.JPG;;;;;;;;
+P1020069.JPG;;;;;;;;
+P1020070.JPG;;;;;;;;
+P1020071.JPG;;;;;;;;
+P1020072.JPG;;;;;;;;
+P1020073.JPG;;;31500;Toulouse;;;;
+P1020074.JPG;Crottin;;24300;Saint-Martial-de-Valette;70;45;45.53774523791453;0.6467533156925064
+P1020075.JPG;Le Chèvrefeuille;Fromagerie Desport;24300;Saint-Martial-de-Valette;230;;45.53774523791453;0.6467533156925064
+P1020076.JPG;Le Cabécou;Fromagerie Le Chèvrefeuille;24300;Nontron;;45;45.53774523791453;0.6467533156925064
+P1020077.JPG;Fromage de chèvre du Périgord;Risser;24190;Neuvic sur l'Isle;135;45;45.0635281;0.4274931
+P1020078.JPG;Picandou;Risser;24350;Lisle;40;;45.264969161244125;0.5274885626384156
+P1020079.JPG;Le Campagnol;Augustin - Le Parc du Maine;24310;Bourdeilles;;45;45.3217639;0.5871282
+P1020080.JPG;Chèvrefeuille;Périgord;;;;45;;
+P1020081.JPG;Buchette de chèvre;Lait. coop. LCC;26400;Crest;120;45;44.7282675;5.0236641
+P1020082.JPG;Bois des Louvières;Milhiet;28500;Marsauceux;60;;48.7267834;1.4397718
+P1020083.JPG;Picodon de Crest blanc;26K / Distribué par SCOFF;69520;Grigny;75;;45.6099696;4.7881958
+P1020084.JPG;;;;;;;;
+P1020085.JPG;;;;;;;;
+P1020086.JPG;Brique Biquette;Brun Fils;07270;Lamastre;130;50;44.9854888;4.5796372
+P1020087.JPG;;;;;;;;
+P1020088.JPG;Galette pur chèvre;Jacques et Viviane Crouzet;07570;Désaignes;200;45;44.9957;4.51747
+P1020089.JPG;;;;;;;;
+P1020090.JPG;;;;;;;;
+P1020092.JPG;Le Petit Gaou;C B Ménager;85440;Talmont Saint Hilaire;;45;46.4666884;-1.618977
+P1020093.JPG;Belle-Bique;79Q;79110;Chef Boutonne;160;45;46.1159102;-0.07939626915895345
+P1020094.JPG;Le Puy du fou;Loic Chupin;85500;Les Herbiers;300;45;46.8714322;-1.0150302
+P1020095.JPG;Le Puy du fou;Loic Chupin;85500;Les Herbiers;300;45;46.8714322;-1.0150302
+P1020096.JPG;Le Puy du Fou;Loic Chupin;85500;Les Herbiers;60;45;46.8714322;-1.0150302
+P1020097.JPG;Chèvrami;GIE des Brandes - La Gannerie;86460;Mauprévoir;130;45;46.1463509;0.534679
+P1020098.JPG;Spécialité du Quercy;Gilbert Alvès;82110;Lauzerte;;45;44.2565123;1.1383233
+P1020099.JPG;Crottin;Fromagerie de Lencloitre;86140;Lencloitre;60;45;46.813891;0.3271012
+P1020100.JPG;Lencloitre;Fromagerie de Lencloitre;86140;Lencoitre;60;;46.796798866403925;0.33874214727770463
+P1020101.JPG;Le Petit Liesvillais;Hervé Lefort - la Huberdière;50480;Liesville du Douve;;45;49.3547717;-1.3363386
+P1020102.JPG;;La Combe - Debetz;04210;Valensole;;45;43.8379245;5.9839792
+P1020103.JPG;Banon de Banon;Ripert;04150;Banon;60;45;44.0381752;5.6296701
+P1020104.JPG;;Chèvriers Gavots;04700;Oraison;;45;43.9166157;5.919898
+P1020105.JPG;;Patrick Boucheron;45270;Nesploy;;45;47.99625;2.36045
+P1020106.JPG;Le chèvre de Saint Vrain en Essone;Ferme du Poirier Rond;91770;Saint Vrain;;45;48.5418303;2.334303
+P1020107.JPG;;Joannès Seve - La Jayoudière;69850;Saint Martin en Haut;;;45.6602362;4.5594655
+P1020108.JPG;Les Monts du Lyonnais;Guy Collet - Ferme des Servannières;69440;Sainte Catherine;;;45.5988383;4.5698983
+P1020109.JPG;Le Mourachu;Elevage de la Batie;69850;Saint Martin en Haut;60;45;45.6602362;4.5594655
+P1020110.JPG;Le Maconnais;Ets Girard;71960;Prissé;;50;46.3212198;4.7448989
+P1020111.JPG;Chabiquet;Laiterie Jacquin;36600;La Vernelle;150;45;47.2479803;1.5439112
+P1020112.JPG;Chèvre doux chêne fermier;Nicolas - Société Fourel R.-Jullien 43U;43210;Valprivas;;45;45.3113915;4.044512
+P1020113.JPG;Le Pélardon - La Cabre;Les chèvriers de l'Hérault;34700;Lodève;70;45;43.73106;3.31892
+P1020114.JPG;Le vrai Pélardon - La Cabre;Les chèvriers de l'Hérault;34700;Lodève;70;45;43.73106;3.31892
+P1020115.JPG;Le Pélardon Cigalois;Fromagerie Cigaloise;30170;Saint Hippolyte du Fort;60;;43.9643602;3.8564364
+P1020116.JPG;Le Pélardon des Cévènnes;Coop. fromagère de Moissac;48110;Moissac Vallée Française;70;50;44.1632402;3.7850987
+P1020117.JPG;Le Pélardon des Cévènnes;Coop. fromagère de Moissac;48110;Moissac Vallée Française;420;50;44.1632402;3.7850987
+P1020118.JPG;Le Roves des Garrigues;Fiquet - Domaine de Montlous;30170;Saint Hippolyte du Fort;70;;43.9643602;3.8564364
+P1020119.JPG;Grand Mémé;G. Jousseaume;16440;Saint Estephe Roullet;170;45;45.5742791;0.0319966
+P1020120.JPG;Chabichou;G. Jousseaume;16440;Saint Estephe Roullet;135;45;45.5742791;0.0319966
+P1020121.JPG;Grand' Mémé;GAEC Jousseaume;16440;Saint Estephe Roullet;170;45;45.5742791;0.0319966
+P1020122.JPG;Braison Charentais;G. Jousseaume;16440;Saint Estephe Roullet;80;45;45.5742791;0.0319966
+P1020123.JPG;Taupinière Charentaise;GAEC Jousseaume;16440;Saint Estephe Roullet;270;45;45.5742791;0.0319966
+P1020124.JPG;Le Petit Vailles;Fromagerie Verdier;46130;Loubressac;140;45;44.8716172;1.8042465
+P1020125.JPG;;D. Barot - Domaine de Sansac;16450;Beaulieu sur Sonnette;220;45;45.9245316;0.3827793
+P1020126.JPG;La Feuille du Limousin;GIE les Fermiers de la Corbrèche;19550;Saint Hilaire Foissac;;45;45.3305365;2.1247124
+P1020127.JPG;;E. Preisinger;12360;Rigols;;45;43.7912183;2.8740807
+P1020128.JPG;Tome de Corrèze;C. et V. Arnaud;19550;Saint Hilaire Foissac;;45;45.3305365;2.1247124
+P1020129.JPG;Chevrotin;Société Laitière des Haut de Savoie;74270;Frangy;;45;46.0190661;5.9293421
+P1020130.JPG;Crottin du Morvan;Les Chapoutins;89270;Essert;60;45;47.6392148;3.7878518
+P1020131.JPG;Chèvre à la feuille;La fromagerie du Quercy;46240;Montfaucon;200;45;44.687293;1.5611106
+P1020132.JPG;Rigotte du Pilat;Chèvrerie de la Combe - Jean Parédés;42220;Thélis la Combre;;45;45.30704974185556;4.5515573602899915
+P1020133.JPG;Rigotte du Pilat;Chèvrerie de la Combe - Jean Parédés;42220;Thélis la Combre;;45;45.30704974185556;4.5515573602899915
+P1020134.JPG;;Chèvrerie de la Combe - Jean Parédés;42220;Thélis la Combre;;;45.30704974185556;4.5515573602899915
+P1020135.JPG;Brique des monts du Pilat;Chèvrerie de la Combe - Jean Parédés;42220;Thélis la Combre;;45;45.30704974185556;4.5515573602899915
+P1020136.JPG;U Salognu;;20115;Piana;;;42.2388671;8.6370569
+P1430318.JPG;La coquette;Ets Schmidhauser;74290;Alex;;26;45.8889285;6.2376659
+P1430319.JPG;;GAEC La Parrachée;73500;Sollières l'Endroit;;;45.2646498;6.8081463
+P1430320.JPG;Melquiot;GAEC Melquiot;73500;rue du Muleney Sollières Sardières;;;45.2613865;6.8091811
