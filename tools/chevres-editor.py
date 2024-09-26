@@ -1,3 +1,4 @@
+import sys
 import csv
 import sys
 import os
@@ -57,7 +58,7 @@ class ChevreEditor:
         self.root.rowconfigure(0, weight=1)
 
         image = Image.open(default_goat_image)
-        image = image.resize((IMG_W, IMG_H), Image.ANTIALIAS)
+        image = image.resize((IMG_W, IMG_H), Image.LANCZOS)
         photo_image = ImageTk.PhotoImage(image)
         self.imglabel = ttk.Label(mainframe)
         self.imglabel.configure(image=photo_image)
@@ -260,7 +261,7 @@ class ChevreEditor:
             self.show_status("No such image {}".format(image_path))
             image_path = default_goat_image
         my_image = Image.open(image_path)
-        my_image = my_image.resize((IMG_W, IMG_H), Image.ANTIALIAS)
+        my_image = my_image.resize((IMG_W, IMG_H), Image.LANCZOS)
         my_photo_image = ImageTk.PhotoImage(my_image)
         self.imglabel.configure(image=my_photo_image)
         self.imglabel.image = my_photo_image
