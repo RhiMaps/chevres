@@ -47,3 +47,13 @@ run the script on your images dir
 * uses existing chevres.csv
 * or creates it with all existing images in dir
 
+#### chevres-editor.py
+
+this gui form allows to read all png images stored under the  data/ dir, and write more meta info in chevres.csv file
+
+* run python3 chevres-editor.py
+* update latests images metadata
+* go back to terminal
+* git add datas/ 
+* git commit -m "my commit message"
+* git push
